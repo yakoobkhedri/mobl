@@ -111,6 +111,12 @@
 .top-65{
     top: 65px;
 }
+.-right-32{
+    right: -32px;
+}
+.-right-58{
+    right: -58px;
+}
 .-z-2{
     z-index: -2!important;
 }
@@ -138,17 +144,29 @@ a:hover{
 .bg-dark2{
     background-color: #1f1f1f;
 }
+.bg-dark3{
+    background-color: #3c3c3c;
+}
 .text-gold{
     color: #916250;
 }
 .text-block{
     color: black;
 }
+.border-black{
+    border-color: black!important;
+}
 .fs-12{
     font-size: 12px;
 }
 .fs-14{
     font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.p-16{
+    padding: 16px;
 }
 .border-t-gold-2{
     border-top: 2px solid #916250;
@@ -181,6 +199,25 @@ a:hover{
 .hover-white:hover{
     color: white!important;
 }
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #1f1f1f;
+    box-shadow: none;
+  }
+  .accordion-button:focus {
+    border-color: #86b7fe;
+    box-shadow: none;
+  }
+  .accordion-button::after,.accordion-button:not(.collapsed)::after {
+    margin-right: auto;
+    margin-left: 0;
+    content: url('../assets/images/Down\ Arrow\ 1.png');
+    background-image: none;
+  }
+  .accordion-button {
+   color: white;
+  }
+  
 @font-face {
     font-family: yekanBakh-Regular;
   
