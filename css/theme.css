@@ -114,6 +114,9 @@
 .-z-2{
     z-index: -2!important;
 }
+.z-1400{
+    z-index: 1400;
+}
 .overflow-y-auto{
     overflow-y: auto;
 }
@@ -121,10 +124,10 @@ a{
     cursor: pointer;
 }
 a:hover{
-    color: #efba0d!important;
+    color: #916250!important;
 }
 .bg-gold{
-    background-color: #efba0d;
+    background-color: #916250;
 }
 .bg-gray{
     background-color: #edecec;
@@ -136,7 +139,7 @@ a:hover{
     background-color: #1f1f1f;
 }
 .text-gold{
-    color: #efba0d;
+    color: #916250;
 }
 .text-block{
     color: black;
@@ -148,7 +151,7 @@ a:hover{
     font-size: 14px;
 }
 .border-t-gold-2{
-    border-top: 2px solid #efba0d;
+    border-top: 2px solid #916250;
 }
 .rounded-8{
     border-radius: 8px;
@@ -972,7 +975,7 @@ header .text p:last-child {
 */
 nav {
     position: relative;
-    z-index: 1030;
+    z-index: 1230;
     width: 100%;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -2839,7 +2842,7 @@ nav .cart-wrapper.open {
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    height: 240px;
+    height: 302px;
   object-fit: cover;
 }
 
