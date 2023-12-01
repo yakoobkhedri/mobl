@@ -14,7 +14,7 @@
         if (!event.target.closest('.productArea')) {
             header2.style.backgroundColor='transparent';
         }
-      })
+    })
 
     // Main navigation & mega menu
     // ----------------------------------------------------------------
