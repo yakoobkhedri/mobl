@@ -135,6 +135,9 @@
 .-z-2{
     z-index: -2!important;
 }
+.z-10{
+    z-index: 10!important;
+}
 .z-1400{
     z-index: 1400;
 }
@@ -154,7 +157,7 @@ a:hover{
     background-color: #edecec;
 }
 .bg-black{
-    background-color: black;
+    background-color: black!important;
 }
 .bg-dark2{
     background-color: #1f1f1f;
