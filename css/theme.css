@@ -171,6 +171,9 @@ a:hover{
 .border-black{
     border-color: black!important;
 }
+.fs-10{
+    font-size: 10px;
+}
 .fs-12{
     font-size: 12px;
 }
@@ -197,6 +200,12 @@ a:hover{
 }
 .visibility-none{
     visibility: hidden;
+}
+#offcanvasMenu {
+    z-index: 1036;
+}
+.modal-backdrop {
+    z-index: 1034;
 }
 .menu li:hover div.position-absolute{
     opacity: 100%;
@@ -235,8 +244,6 @@ a:hover{
   
 .cd-image-container {
     position: relative;
-    width: 90%;
-    max-width: 768px;
     margin: 0em auto;
   }
   .cd-image-container img {
@@ -1174,7 +1181,7 @@ header .text p:last-child {
 */
 nav {
     position: relative;
-    z-index: 1230;
+    z-index: 1038;
     width: 100%;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
