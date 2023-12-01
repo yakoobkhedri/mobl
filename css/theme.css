@@ -1193,7 +1193,9 @@ nav {
     transition: all 0.5s;
     text-align: right;
 }
-
+nav a.active{
+    color: #916250!important;
+}
 @media print {
     nav {
         display: none !important;
