@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Mobile Web-app fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Meta tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/logo.png">
+
+    <!--Title-->
+    <title>کاتالوگ ها</title>
+
+    <!--CSS bundle -->
+    <link rel="stylesheet" media="all" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" media="all" href="css/animate.css" />
+    <link rel="stylesheet" media="all" href="css/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="css/ion-range-slider.css" />
+    <link rel="stylesheet" media="all" href="css/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="css/magnific-popup.css" />
+    <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="css/theme.css" />
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- search modal -->
+    <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form
+                        class="d-flex cursor rounded-3 w-100 h-37 py-1 px-2 border align-items-center justify-content-between gap-2">
+                        <input type="search" placeholder="جستجو..."
+                            class="form-control bg-transparent border-0 focus-none">
+                        <div class="position-relative cursor">
+                            <input type="submit"
+                                class="position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0 opacity-none z-10 cursor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- favorite modal -->
+    <div class="offcanvas offcanvas-start z-1400" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <svg data-bs-dismiss="offcanvas" aria-label="Close" xmlns="http://www.w3.org/2000/svg" width="22"
+                height="22" fill="currentColor" class="bi bi-x mt-2 cursor" viewBox="0 0 16 16">
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+            <a
+                class="d-flex align-items-center justify-content-between bg-black text-white fw-bold py-2 px-3 w-150 rounded-3">
+                <p class="mb-0">یعقوب خدری</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </a>
+        </div>
+        <div class="offcanvas-body my-5 pb-5 px-4 h-420 overflow-y-auto">
+            <div class="row gx-4 gy-5">
+                <div class="col-6">
+                    <a class="d-block">
+                        <img alt="favorite" src="assets/images/lins-kanepe-22.jpg" class="img-fluid d-block mx-auto">
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="fw-bold">
+                                <h3 class="fs-12 text-muted mb-0">MIRO</h3>
+                                <h4 class="fs-14 mt-1">میز تلویزیون</h4>
+                            </div>
+                            <div
+                                class="w-26 h-26 rounded-circle bg-gray close-hover d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-x cursor text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="d-block">
+                        <img alt="favorite" src="assets/images/lins-kanepe-22.jpg" class="img-fluid d-block mx-auto">
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="fw-bold">
+                                <h3 class="fs-12 text-muted mb-0">MIRO</h3>
+                                <h4 class="fs-14 mt-1">میز تلویزیون</h4>
+                            </div>
+                            <div
+                                class="w-26 h-26 rounded-circle bg-gray close-hover d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-x cursor text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="d-block">
+                        <img alt="favorite" src="assets/images/lins-kanepe-22.jpg" class="img-fluid d-block mx-auto">
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="fw-bold">
+                                <h3 class="fs-12 text-muted mb-0">MIRO</h3>
+                                <h4 class="fs-14 mt-1">میز تلویزیون</h4>
+                            </div>
+                            <div
+                                class="w-26 h-26 rounded-circle bg-gray close-hover d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-x cursor text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="d-block">
+                        <img alt="favorite" src="assets/images/lins-kanepe-22.jpg" class="img-fluid d-block mx-auto">
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="fw-bold">
+                                <h3 class="fs-12 text-muted mb-0">MIRO</h3>
+                                <h4 class="fs-14 mt-1">میز تلویزیون</h4>
+                            </div>
+                            <div
+                                class="w-26 h-26 rounded-circle bg-gray close-hover d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-x cursor text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6">
+                    <a class="d-block">
+                        <img alt="favorite" src="assets/images/lins-kanepe-22.jpg" class="img-fluid d-block mx-auto">
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="fw-bold">
+                                <h3 class="fs-12 text-muted mb-0">MIRO</h3>
+                                <h4 class="fs-14 mt-1">میز تلویزیون</h4>
+                            </div>
+                            <div
+                                class="w-26 h-26 rounded-circle bg-gray close-hover d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                    class="bi bi-x cursor text-dark" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute bottom-0 start-0 end-0 p-4 bg-white">
+            <a class="rounded-8 hover-white d-block bg-gold text-white fs-12 fw-bold text-center p-3">پیشنهاد دریافت
+                کنید</a>
+        </div>
+    </div>
+
+    <!-- mobile menu modal -->
+    <div class="offcanvas offcanvas-start w-100 bg-black d-lg-none pt-5" tabindex="-1" id="offcanvasMenu"
+        aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mt-5">
+            <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion-item mb-2 border-0">
+                    <h2 class="accordion-header d-flex flex-column">
+                        <button class="accordion-button bg-dark2 text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <p>محصولات</p>
+                            <small class="d-block fs-10 mt-4 pt-2 position-relative -right-58 text-muted">بیش از 200
+                                محصول ما را بر اساس نیاز خود سفارشی کنید.</small>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-dark2 border-top border-black">
+                            <div class="mb-3">
+                                <h5 class="text-muted">هال پذیرایی</h5>
+                                <ul class="list-unstyled pe-0 mb-0 fs-6 text-white">
+                                    <li class="mb-2"><a>واحدهای تلویزیون</a>
+                                    </li>
+                                    <li class="mb-2"><a>مبل ها</a></li>
+                                    <li class="mb-2"><a>صندلی راحتی</a></li>
+                                    <li class="mb-2"><a>میز قهوه خوری</a></li>
+                                    <li><a>کوسن ها</a></li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <h5 class="text-muted">اتاق ناهار</h5>
+                                <ul class="list-unstyled pe-0 mb-0 fs-6 text-white">
+                                    <li class="mb-2"><a>واحدهای تلویزیون</a>
+                                    </li>
+                                    <li class="mb-2"><a>مبل ها</a></li>
+                                    <li class="mb-2"><a>صندلی راحتی</a></li>
+                                    <li class="mb-2"><a>میز قهوه خوری</a></li>
+                                    <li><a>کوسن ها</a></li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <h5 class="text-muted">اتاق خواب</h5>
+                                <ul class="list-unstyled pe-0 mb-0 fs-6 text-white">
+                                    <li class="mb-2"><a>واحدهای تلویزیون</a>
+                                    </li>
+                                    <li class="mb-2"><a>مبل ها</a></li>
+                                    <li class="mb-2"><a>صندلی راحتی</a></li>
+                                    <li class="mb-2"><a>میز قهوه خوری</a></li>
+                                    <li><a>کوسن ها</a></li>
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <h5 class="text-muted">مکمل</h5>
+                                <ul class="list-unstyled pe-0 mb-0 fs-6 text-white">
+                                    <li class="mb-2"><a>واحدهای تلویزیون</a>
+                                    </li>
+                                    <li class="mb-2"><a>مبل ها</a></li>
+                                    <li class="mb-2"><a>صندلی راحتی</a></li>
+                                    <li class="mb-2"><a>میز قهوه خوری</a></li>
+                                    <li><a>کوسن ها</a></li>
+                                </ul>
+                            </div>
+                            <div class="mb-2">
+                                <a
+                                    class="d-flex flex-grow-1 btn bg-dark2 h-56 bg-dark3 align-items-center justify-content-between text-white fw-bold">
+                                    <p class="mb-0">محصولات جدید</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mb-2">
+                                <a
+                                    class="d-flex flex-grow-1 btn bg-dark2 h-56 bg-dark3 align-items-center justify-content-between text-white fw-bold">
+                                    <p class="mb-0">محصولات پرفروش</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="mb-2">
+                                <a
+                                    class="d-flex flex-grow-1 btn bg-dark2 h-56 bg-dark3 align-items-center justify-content-between text-white fw-bold">
+                                    <p class="mb-0">محصولات محبوب</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a
+                                    class="d-flex flex-grow-1 btn bg-dark2 h-56 bg-dark3 align-items-center justify-content-between text-white fw-bold">
+                                    <p class="mb-0">محصولات ارزان</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="mb-2 border-0 d-block fs-12">
+                    <h2 class="d-flex flex-column">
+                        <button class="bg-dark2 text-white p-16 fs-16 border-0">
+                            <p class="mb-0 text-end">پروژه ها</p>
+                            <small class="d-block fs-10 text-end text-muted mt-1">پروژه هایی را که به نمایش می گذاریم با
+                                درک برتری کشف کنید.</small>
+                        </button>
+                    </h2>
+                </a>
+                <div class="accordion-item mb-2 border-0">
+                    <h2 class="accordion-header d-flex flex-column">
+                        <button class="accordion-button bg-dark2 text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <p>شرکت</p>
+                            <small class="d-block fs-10 mt-4 pt-2 position-relative -right-32 text-muted">نگاهی دقیق تر
+                                به فروشگاه ها و داستان ما بیندازید.</small>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body bg-dark2 border-top border-black">
+                            <div class="mb-3">
+                                <ul class="list-unstyled pe-0 mb-0 fs-6 text-white">
+                                    <li class="mb-2"><a>واحدهای تلویزیون</a>
+                                    </li>
+                                    <li class="mb-2"><a>مبل ها</a></li>
+                                    <li class="mb-2"><a>صندلی راحتی</a></li>
+                                    <li class="mb-2"><a>میز قهوه خوری</a></li>
+                                    <li><a>کوسن ها</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">در حال بارگزاری...</span>
+        </div>
+    </div>
+
+    <div class="position-relative">
+
+        <!-- ======================== Navigation ======================== -->
+
+        <nav class="fs-14">
+            <div class="bg-black">
+                <div class="container px-4">
+                    <div class="d-flex align-items-center gap-5 bg-black h-40">
+                        <select class="h-100 bg-gold border-0 px-3 form-control d-block w-80 text-center rounded-0">
+                            <option class="text-center">فارسی</option>
+                            <option class="text-center">TR</option>
+                            <option class="text-center">RU</option>
+                        </select>
+                        <a class="text-white d-none d-sm-block">حرفه</a>
+                        <a href="contact.html" class="text-white d-none d-sm-block">تماس</a>
+                        <a href="support.html" class="text-white d-none d-sm-block">پشتیبانی</a>
+                        <a class="text-white d-none d-sm-block active">کاتالوگ ها</a>
+                        <a class="text-white d-none d-sm-block">نمایش اتاق ها</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header2 transition bg-black">
+                <div class="container px-4 position-static">
+                    <div class="h-110 d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-5 h-100">
+                            <a class="d-block">
+                                <img alt="logo" src="assets/images/logo.png">
+                            </a>
+                            <ul class="mb-0 pe-0 d-none d-lg-flex align-items-center list-unstyled gap-4 menu h-100">
+                                <li class="h-100 d-flex align-items-center"><a href="index.html" class="text-white">صفحه
+                                        اصلی</a></li>
+                                <li class="h-100 d-flex align-items-center productArea" id="productLink">
+                                    <a class="text-white">محصولات
+                                        <div
+                                            class="position-absolute productArea end-0 start-0 w-100 opacity-none visibility-none transition top-65 -z-2">
+                                            <div class="h-101 w-100"></div>
+                                            <div class="bg-black w-100 h-269 mt-5 pt-4">
+                                                <div class="">
+                                                    <div class="container px-4">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <div class="row fw-bold text-white">
+                                                                    <div class="col-3">
+                                                                        <h5 class="text-muted">هال پذیرایی</h5>
+                                                                        <ul class="list-unstyled pe-0 mb-0">
+                                                                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                                                                            </li>
+                                                                            <li class="mb-1"><a>مبل ها</a></li>
+                                                                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                                                                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                                                                            <li><a>کوسن ها</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <h5 class="text-muted">اتاق ناهار</h5>
+                                                                        <ul class="list-unstyled pe-0 mb-0">
+                                                                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                                                                            </li>
+                                                                            <li class="mb-1"><a>مبل ها</a></li>
+                                                                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                                                                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                                                                            <li><a>کوسن ها</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <h5 class="text-muted">اتاق خواب</h5>
+                                                                        <ul class="list-unstyled pe-0 mb-0">
+                                                                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                                                                            </li>
+                                                                            <li class="mb-1"><a>مبل ها</a></li>
+                                                                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                                                                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                                                                            <li><a>کوسن ها</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-3">
+                                                                        <h5 class="text-muted">مکمل</h5>
+                                                                        <ul class="list-unstyled pe-0 mb-0">
+                                                                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                                                                            </li>
+                                                                            <li class="mb-1"><a>مبل ها</a></li>
+                                                                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                                                                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                                                                            <li><a>کوسن ها</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="d-flex align-items-center gap-4 mb-4 me-4">
+                                                                    <a
+                                                                        class="d-flex flex-grow-1 btn bg-dark2 h-56 px-3 align-items-center justify-content-between text-white fw-bold">
+                                                                        <p class="mb-0">محصولات جدید</p>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" fill="currentColor"
+                                                                            class="bi bi-chevron-left"
+                                                                            viewBox="0 0 16 16">
+                                                                            <path fill-rule="evenodd"
+                                                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                        </svg>
+                                                                    </a>
+                                                                    <a
+                                                                        class="d-flex flex-grow-1 btn bg-dark2 h-56 px-3 align-items-center justify-content-between text-white fw-bold">
+                                                                        <p class="mb-0">محصولات پرفروش</p>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" fill="currentColor"
+                                                                            class="bi bi-chevron-left"
+                                                                            viewBox="0 0 16 16">
+                                                                            <path fill-rule="evenodd"
+                                                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="d-flex align-items-center gap-4 me-4">
+                                                                    <a
+                                                                        class="d-flex flex-grow-1 btn bg-dark2 h-56 px-3 align-items-center justify-content-between text-white fw-bold">
+                                                                        <p class="mb-0">محصولات محبوب</p>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" fill="currentColor"
+                                                                            class="bi bi-chevron-left"
+                                                                            viewBox="0 0 16 16">
+                                                                            <path fill-rule="evenodd"
+                                                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                        </svg>
+                                                                    </a>
+                                                                    <a
+                                                                        class="d-flex flex-grow-1 btn bg-dark2 h-56 px-3 align-items-center justify-content-between text-white fw-bold">
+                                                                        <p class="mb-0">محصولات ارزان</p>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="16" height="16" fill="currentColor"
+                                                                            class="bi bi-chevron-left"
+                                                                            viewBox="0 0 16 16">
+                                                                            <path fill-rule="evenodd"
+                                                                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="h-100 d-flex align-items-center">
+                                    <a class="text-white">پروژه ها</a>
+                                </li>
+                                <li class="h-100 d-flex align-items-center position-relative">
+                                    <a class="text-white">شرکت
+                                        <div
+                                            class="position-absolute w-150 end-0 start-0 opacity-none visibility-none transition top-65 -z-2">
+                                            <div class="bg-black w-100 border-t-gold-2 rounded-b-10">
+                                                <ul class="list-unstyled mb-0 p-2">
+                                                    <li class="mb-1"><a>واحدهای تلویزیون</a></li>
+                                                    <li class="mb-1"><a>مبل ها</a></li>
+                                                    <li class="mb-1"><a>صندلی راحتی</a></li>
+                                                    <li class="mb-1"><a>میز قهوه خوری</a></li>
+                                                    <li><a>کوسن ها</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center gap-sm-3 gap-1 h-100">
+                            <form data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                class="d-flex align-items-center gap-2 cursor">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="">
+                                    <circle cx="14" cy="14" r="7.5" stroke="white"></circle>
+                                    <path d="M21 21.5L25 25.5" stroke="white"></path>
+                                </svg>
+                                <p class="mb-0 text-white d-none d-sm-block">جستجو</p>
+                            </form>
+                            <a>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="">
+                                    <circle cx="16" cy="14" r="7.5" stroke="white" style="stroke: white;"></circle>
+                                    <path d="M24 26V26C24 24.8954 23.1046 24 22 24H10C8.89543 24 8 24.8954 8 26V26"
+                                        stroke="white" style="stroke:white"></path>
+                                </svg>
+                            </a>
+                            <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                class="rounded-circle w-36 h-36 bg-gold d-flex align-items-center justify-content-center cursor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-heart text-white" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                            <!-- ham icon -->
+                            <svg data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                                aria-controls="offcanvasMenu" class="d-lg-none cursor" width="32" height="32"
+                                viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="7" y="18" width="18" height="1" fill="white"></rect>
+                                <rect x="7" y="13" width="18" height="1" fill="white"></rect>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ========================  Contact ======================== -->
+
+        <section class="contact container mt-4">
+
+            <div class="position-relative">
+                <img alt="contact" src="assets/images/catalogs.jpg" class="img-fluid w-100">
+                <div
+                    class="position-absolute mx-auto text-white z-10 end-0 top-0 bottom-0 start-0 text-center w-100 h-100">
+                    <div class="mt-5 pt-md-5">
+                        <h3 class="fw-bold">کاتالوگ ها</h3>
+                        <p>ما را از نزدیک با گزینه های مختلف کاتالوگ ما کشف کنید.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5 pt-4">
+                <div>
+                    <p class="text-gold fw-bold mb-0">دانلود کاتالوگ ها</p>
+                    <p class="h5 fw-bold mt-2">
+                        برای دریافت اطلاعات دقیق تر در مورد محصولات، خدمات و خدمات ما می توانید کاتالوگ های ما را دانلود
+                        کنید.
+                    </p>
+                    <div class="row g-4 mt-5">
+                        <div class="col-xl-4 col-lg-4 col-sm-6">
+                            <div class="shadow">
+                                <img alt="catalog" src="assets/images/konsept-katalogu.jpg"
+                                    class="img-fluid w-100 d-block h-255 object-cover">
+                                <div class="p-3">
+                                    <h3 class="fw-bold">کاتالوگ محصول</h3>
+                                    <p>2023</p>
+                                    <p>شما می توانید با دانلود کاتالوگ ما که شامل مفاهیم و خدمات محصول ما است، اطلاعات دقیق
+                                        تری در مورد شرکت ما دریافت کنید.</p>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                                        <a
+                                            class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                              </svg>
+                                        </a>
+                                        <a
+                                            class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-sm-6">
+                            <div class="shadow">
+                                <img alt="catalog" src="assets/images/urun-katalogu.jpg"
+                                    class="img-fluid w-100 d-block h-255 object-cover">
+                                <div class="p-3">
+                                    <h3 class="fw-bold">کاتالوگ محصول</h3>
+                                    <p>2023</p>
+                                    <p>شما می توانید با دانلود کاتالوگ ما که شامل مفاهیم و خدمات محصول ما است، اطلاعات دقیق
+                                        تری در مورد شرکت ما دریافت کنید.</p>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                                        <a
+                                            class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                              </svg>
+                                        </a>
+                                        <a
+                                            class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================  about ======================== -->
+
+        <section id="about" class="pt-0">
+            <div class="container">
+                <h3 class="mb-4">درباره دکوراسیون قهرمانی</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <a class="p-4 bg-gray h-269 d-block text-dark py-5 scale-hover text-black-hover">
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <svg width="40" height="31" viewBox="0 0 40 31" fill="#916250"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.4569 11.1211L33.1248 1.74609C32.7733 1.16016 32.1873 0.75 31.4842 0.75H8.45687C7.81234 0.75 7.16781 1.16016 6.81624 1.74609L1.48421 11.1211C0.781088 12.3516 1.65999 13.875 3.12484 13.875H4.99984V28.8164C4.99984 29.8711 5.82015 30.75 6.87484 30.75H21.8748C22.8709 30.75 23.7498 29.8711 23.7498 28.8164V13.875H33.1248V30.2812C33.1248 30.5742 33.3006 30.75 33.5936 30.75H34.5311C34.7655 30.75 34.9998 30.5742 34.9998 30.2812V13.875H36.8748C38.2811 13.875 39.16 12.3516 38.4569 11.1211ZM21.8748 28.8164C21.8748 28.875 21.8162 28.875 21.8162 28.875L6.87484 28.9336C6.87484 28.9336 6.87484 28.875 6.87484 28.8164V21.375H21.8748V28.8164ZM21.8748 19.5H6.87484V13.875H21.8748V19.5ZM3.12484 12L8.45687 2.625H31.4842L36.8748 12H3.12484Z">
+                                    </path>
+                                </svg>
+                                <svg class="rotate-180 d-none arrow-show-hover" width="34" height="17"
+                                    viewBox="0 0 34 17" fill="#916250" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 8.5H33M33 8.5L25 0.5M33 8.5L25 16.5" stroke="#916250"></path>
+                                </svg>
+                            </div>
+                            <h3 class="fw-bold">نمایش اتاق ها</h3>
+                            <p class="fs-14">بیش از 30 شعبه فعال در ترکیه و خارج از کشور</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a class="p-4 bg-gray h-269 d-block text-dark py-5 scale-hover text-black-hover">
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <svg width="40" height="31" viewBox="0 0 30 31" fill="#916250"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M28.1251 19.5H11.2501V2.625C11.2501 1.62891 10.3712 0.75 9.37508 0.75H1.87508C0.820394 0.75 8.10623e-05 1.62891 8.10623e-05 2.625V28.875C8.10623e-05 29.9297 0.820394 30.75 1.87508 30.75H28.1251C29.1212 30.75 30.0001 29.9297 30.0001 28.875V21.375C30.0001 20.3789 29.1212 19.5 28.1251 19.5ZM1.87508 2.625H9.37508V6.375H6.09383C5.80086 6.375 5.62508 6.60938 5.62508 6.84375V7.78125C5.62508 8.07422 5.80086 8.25 6.09383 8.25H9.37508V11.0625H6.09383C5.80086 11.0625 5.62508 11.2969 5.62508 11.5312V12.4688C5.62508 12.7617 5.80086 12.9375 6.09383 12.9375H9.37508V15.75H6.09383C5.80086 15.75 5.62508 15.9844 5.62508 16.2188V17.1562C5.62508 17.4492 5.80086 17.625 6.09383 17.625H9.37508V20.0859L1.87508 27.5859V2.625ZM28.1251 28.875H3.16414L10.6641 21.375H13.1251V24.6562C13.1251 24.9492 13.3009 25.125 13.5938 25.125H14.5313C14.7657 25.125 15.0001 24.9492 15.0001 24.6562V21.375H17.8126V24.6562C17.8126 24.9492 17.9884 25.125 18.2813 25.125H19.2188C19.4532 25.125 19.6876 24.9492 19.6876 24.6562V21.375H22.5001V24.6562C22.5001 24.9492 22.6759 25.125 22.9688 25.125H23.9063C24.1407 25.125 24.3751 24.9492 24.3751 24.6562V21.375H28.1251V28.875Z">
+                                    </path>
+                                </svg>
+                                <svg class="rotate-180 d-none arrow-show-hover" width="34" height="17"
+                                    viewBox="0 0 34 17" fill="#916250" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 8.5H33M33 8.5L25 0.5M33 8.5L25 16.5" stroke="#916250"></path>
+                                </svg>
+                            </div>
+                            <h3 class="fw-bold">طرح بندی ها</h3>
+                            <p class="fs-14">در میان بیش از 300 پیشنهاد چیدمان، راه حل های متناسب با نیازها و سلیقه های
+                                شما را کشف کنید.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a class="p-4 bg-gray h-269 d-block text-dark py-5 scale-hover text-black-hover">
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="#916250"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.62484 26.0625C6.09359 26.0625 6.56234 25.6523 6.56234 25.125C6.56234 24.6562 6.09359 24.1875 5.62484 24.1875C5.09749 24.1875 4.68734 24.6562 4.68734 25.125C4.68734 25.6523 5.09749 26.0625 5.62484 26.0625ZM28.1248 19.5H19.16L25.4881 13.2305C26.1912 12.4688 26.1912 11.2969 25.4881 10.5938L20.1561 5.26172C19.8045 4.91016 19.3358 4.73438 18.867 4.73438C18.3983 4.73438 17.8709 4.91016 17.5194 5.26172L11.2498 11.5898V2.625C11.2498 1.62891 10.3709 0.75 9.37484 0.75H1.87484C0.820149 0.75 -0.000163078 1.62891 -0.000163078 2.625V25.125C-0.000163078 28.2891 2.46077 30.75 5.62484 30.75H28.1248C29.1209 30.75 29.9998 29.9297 29.9998 28.875V21.375C29.9998 20.3789 29.1209 19.5 28.1248 19.5ZM9.37484 25.125C9.37484 27.2344 7.67562 28.875 5.62484 28.875C3.51546 28.875 1.87484 27.2344 1.87484 25.125V17.625H9.37484V25.125ZM9.37484 15.75H1.87484V10.125H9.37484V15.75ZM9.37484 8.25H1.87484V2.625H9.37484V8.25ZM11.2498 14.2266L18.867 6.60938L24.1405 11.8828L11.2498 24.832V14.2266ZM28.1248 28.875H9.78499L17.285 21.375H28.1248V28.875Z">
+                                    </path>
+                                </svg>
+                                <svg class="rotate-180 d-none arrow-show-hover" width="34" height="17"
+                                    viewBox="0 0 34 17" fill="#916250" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 8.5H33M33 8.5L25 0.5M33 8.5L25 16.5" stroke="#916250"></path>
+                                </svg>
+                            </div>
+                            <h3 class="fw-bold">حالت خلق و خو</h3>
+                            <p class="fs-14">13 طرح مفهومی مختلف ما را با انواع رنگ و مواد بررسی کنید.</p>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <a class="p-4 bg-gray h-269 d-block text-dark py-5 scale-hover text-black-hover">
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <svg width="28" height="31" viewBox="0 0 28 31" fill="#916250"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M26.8907 23.6016L22.4962 18.5625H24.3126C24.6641 18.5625 24.9571 18.3867 25.1329 18.0352C25.3087 17.6836 25.2501 17.332 25.0157 17.0391L20.7384 12H22.4376C22.7891 12 23.1407 11.8242 23.2579 11.4727C23.4337 11.1211 23.3751 10.7109 23.0821 10.4766L14.6446 1.10156C14.293 0.691406 13.6485 0.691406 13.297 1.10156L4.85946 10.4766C4.68367 10.5938 4.56649 10.8867 4.56649 11.0625C4.56649 11.1797 4.62508 11.3555 4.68367 11.4727C4.80086 11.8242 5.15242 12 5.50399 12H7.20321L2.92586 17.0391C2.69149 17.332 2.63289 17.6836 2.80867 18.0352C2.98446 18.3867 3.27742 18.5625 3.62899 18.5625H5.44539L1.05086 23.6016C0.816487 23.8945 0.757894 24.2461 0.933675 24.5977C1.10946 24.9492 1.40242 25.125 1.81258 25.125H11.1876V26.5898L9.72274 29.4023C9.42977 30.0469 9.89852 30.75 10.6016 30.75H17.3399C18.043 30.75 18.5118 30.0469 18.2188 29.4023L16.8126 26.5898V25.125H26.1876C26.5391 25.125 26.8321 24.9492 27.0079 24.5977C27.1837 24.2461 27.1251 23.8945 26.8907 23.6016ZM12.1251 28.875L13.0626 27V25.125H14.9376V27L15.8751 28.875H12.1251ZM3.80477 23.25L9.42977 16.6875H5.67977L11.2462 10.125H7.61336L14.0001 3.09375L20.3282 10.125H16.6954L22.2618 16.6875H18.5118L24.1368 23.25H3.80477Z">
+                                    </path>
+                                </svg>
+                                <svg class="rotate-180 d-none arrow-show-hover" width="34" height="17"
+                                    viewBox="0 0 34 17" fill="#916250" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 8.5H33M33 8.5L25 0.5M33 8.5L25 16.5" stroke="#916250"></path>
+                                </svg>
+                            </div>
+                            <h3 class="fw-bold">درباره ما</h3>
+                            <p class="fs-14">سازمان، فلسفه و رویکرد ما</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ================== Footer  ================== -->
+
+        <footer class="pb-0">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-3">
+                        <a><img alt="logo" src="assets/images/logo.png" class="d-block mx-auto mx-md-0"></a>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <h5 class="text-dark">هال پذیرایی</h5>
+                        <ul class="list-unstyled pe-0 mb-0">
+                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                            </li>
+                            <li class="mb-1"><a>مبل ها</a></li>
+                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                            <li><a>کوسن ها</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <h5 class="text-dark">اتاق ناهار</h5>
+                        <ul class="list-unstyled pe-0 mb-0">
+                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                            </li>
+                            <li class="mb-1"><a>مبل ها</a></li>
+                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                            <li><a>کوسن ها</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <h5 class="text-dark">اتاق خواب</h5>
+                        <ul class="list-unstyled pe-0 mb-0">
+                            <li class="mb-1"><a>واحدهای تلویزیون</a>
+                            </li>
+                            <li class="mb-1"><a>مبل ها</a></li>
+                            <li class="mb-1"><a>صندلی راحتی</a></li>
+                            <li class="mb-1"><a>میز قهوه خوری</a></li>
+                            <li><a>کوسن ها</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                            <a
+                                class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                            </a>
+                            <a
+                                class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                            <a
+                                class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                                </svg>
+                            </a>
+                            <a
+                                class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pinterest" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+                                </svg>
+                            </a>
+                            <a
+                                class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15" />
+                                </svg>
+                            </a>
+                            <a
+                                class="d-flex align-items-center justify-content-center bg-gray w-36 h-36 rounded-8 text-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="text-block d-flex flex-column flex-md-row align-items-center gap-md-3 gap-1 fs-12 fw-bold mt-md-4 mt-5 pt-5 pt-md-0">
+                            <a>شرایط و ضوابط استفاده</a>
+                            <span class="d-none d-md-block">|</span>
+                            <a>توافقنامه عضویت</a>
+                            <span class="d-none d-md-block">|</span>
+                            <a>گارانتی، تعویض و مرجوعی</a>
+                            <span class="d-none d-md-block">|</span>
+                            <a>سیاست حفظ حریم خصوصی</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-black py-2 text-center text-gold fw-bold mt-5 fs-12">
+                <p class="mb-0">AdibGroup © 2023. طراحی فضاهای زندگی.</p>
+            </div>
+        </footer>
+
+
+    </div> <!--/wrapper-->
+
+    <!--Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ion.rangeSlider.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/bigtext.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function initMap() {
+            var contentString =
+                '<div class="map-info-window">' +
+                '<p><img src="assets/images/divano-logo.png" alt="" width="150"></p>' +
+                '<p><strong>Divano - Furniture Template</strong></p>' +
+                '<p><i class="fa fa-map-marker"></i> 200 12th Ave, New York, NY 10001, USA</p>' +
+                '<p><i class="fa fa-phone"></i> +12 33 444 555</p>' +
+                '<p><i class="fa fa-clock-o"></i> 10am - 6pm</p>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+            //set default pposition
+            var myLatLng = { lat: 40.7459772, lng: -74.0545504 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: myLatLng,
+                styles: [{ "featureType": "administrative", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 20 }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 40 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -10 }, { "lightness": 30 }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 10 }] }, { "featureType": "landscape.natural", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 60 }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }] }]
+            });
+            //set marker
+            var image = 'assets/images/map-icon.png';
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: "Hello World!",
+                icon: image
+            });
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAabaAL675kRhFvfrPEmjFUirXHk2cA9Dc&callback=initMap"></script>
+
+</body>
+
+</html>

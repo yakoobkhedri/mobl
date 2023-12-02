@@ -102,6 +102,9 @@
 .h-110{
     height: 110px;
 }
+.h-255{
+    height: 255px;
+}
 .h-269{
     height: 269px;
 }
@@ -203,6 +206,9 @@ a:hover{
 }
 .visibility-none{
     visibility: hidden;
+}
+.object-cover{
+    object-fit: cover;
 }
 #offcanvasMenu {
     z-index: 1036;
