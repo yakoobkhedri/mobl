@@ -102,6 +102,9 @@
 .h-56{
     height: 56px;
 }
+.h-72{
+    height: 72px;
+}
 .h-110{
     height: 110px;
 }
@@ -110,6 +113,9 @@
 }
 .h-269{
     height: 269px;
+}
+.h-380{
+    height: 380px;
 }
 .h-420{
     height: 420px!important;
@@ -125,6 +131,9 @@
 }
 .w-40{
     width: 40%;
+}
+.w-72{
+    width: 72px;
 }
 .w-80{
     width: 80px;
@@ -249,6 +258,10 @@ a:hover{
 }
 .project-hover:hover > div{
     bottom: -118px!important;
+}
+.about-hover:hover img{
+    opacity: .8;
+    transform: scale(1.1);
 }
 .accordion-button:not(.collapsed) {
     color: white;
@@ -7360,7 +7373,11 @@ footer .footer-social li a {
         flex: 0 0 300px;
     }
 }
-
+@media (max-width: 576px) {
+  .h-sm-380{
+    height: auto;
+  }
+}
 /* Version 1.1.0. 
  * Theme credit ElaThemes.com */
 
