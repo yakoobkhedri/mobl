@@ -96,6 +96,9 @@
 .h-40{
     height: 40px;
 }
+.h-48{
+    height: 48px;
+}
 .h-56{
     height: 56px;
 }
@@ -111,6 +114,9 @@
 .h-420{
     height: 420px!important;
 }
+.h-476{
+    height: 476px;
+}
 .w-26{
     width: 26px;
 }
@@ -122,6 +128,9 @@
 }
 .w-80{
     width: 80px;
+}
+.w-124{
+    width: 124px;
 }
 .w-150{
     width: 150px;
@@ -234,6 +243,12 @@ a:hover{
 }
 .hover-white:hover{
     color: white!important;
+}
+.project-hover:hover a{
+   opacity: 100%;
+}
+.project-hover:hover > div{
+    bottom: -118px!important;
 }
 .accordion-button:not(.collapsed) {
     color: white;
