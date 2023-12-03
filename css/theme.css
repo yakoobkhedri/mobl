@@ -281,7 +281,14 @@ a:hover{
   .accordion-button {
    color: white;
   }
-  
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+   background-color: black;
+  }
+  .nav-pills .nav-link {
+   background-color: #f4f2f2;
+   width: 108px;
+   color: black;
+  }
 .cd-image-container {
     position: relative;
     margin: 0em auto;
