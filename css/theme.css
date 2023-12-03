@@ -105,6 +105,9 @@
 .h-72{
     height: 72px;
 }
+.h-90{
+    height: 90px;
+}
 .h-110{
     height: 110px;
 }
@@ -132,11 +135,17 @@
 .w-40{
     width: 40%;
 }
+.w-48{
+    width: 48px;
+}
 .w-72{
     width: 72px;
 }
 .w-80{
     width: 80px;
+}
+.w-90{
+    width: 90px;
 }
 .w-124{
     width: 124px;

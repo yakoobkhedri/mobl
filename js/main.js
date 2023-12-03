@@ -16,6 +16,35 @@
         }
     })
 
+    // swiper
+    var Consultants = new Swiper(".Consultants", {
+        loop: true,
+        spaceBetween: 40,
+        slidesPerView: 1,
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+          1400: {
+            slidesPerView: 5,
+          }
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
     // Main navigation & mega menu
     // ----------------------------------------------------------------
 
