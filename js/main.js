@@ -45,6 +45,16 @@
         },
       });
 
+    //   show Consultants
+    let showConsultants=Array.from(document.getElementsByClassName('showConsultants'));
+
+    showConsultants.forEach((item)=>{
+        item.addEventListener('click',function () {
+            item.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle('active');
+            item.querySelector('svg').classList.toggle('active');
+        })
+    })
+
     // Main navigation & mega menu
     // ----------------------------------------------------------------
 

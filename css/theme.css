@@ -298,6 +298,35 @@ a:hover{
    width: 108px;
    color: black;
   }
+  .swiper-button-next::after, .swiper-button-prev::after {
+   display: none;
+  }
+  .swiper-button-next{
+    top: 13px;
+  }
+  .swiper-button-prev {
+    right: auto!important;
+    left: 90px!important;
+    top: 13px;
+  }
+  .showConsultants svg {
+    transition: all .4s;
+  }
+  .showConsultants svg.active {
+    transform: rotate(180deg);
+  }
+  .ConsultantsContent{
+    max-height: 0;
+    transition: all .4s;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  .ConsultantsContent.active{
+   max-height: 1000px;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+  }
 .cd-image-container {
     position: relative;
     margin: 0em auto;
