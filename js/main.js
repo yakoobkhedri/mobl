@@ -44,6 +44,27 @@
           prevEl: ".swiper-button-prev",
         },
       });
+      var suggestion = new Swiper(".suggestion", {
+        loop: true,
+        spaceBetween: 40,
+        slidesPerView: 1.3,
+        breakpoints: {
+          576: {
+            slidesPerView: 2.3,
+          },
+          992: {
+            slidesPerView: 3.3,
+          }
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
     //   show Consultants
     let showConsultants=Array.from(document.getElementsByClassName('showConsultants'));
