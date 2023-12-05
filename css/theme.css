@@ -3126,13 +3126,13 @@ nav .cart-wrapper.open {
 }
 
 .products article .image img {
-    width: 100%;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     height: 302px;
-  object-fit: cover;
+  display: block;
+  margin: auto;
 }
 
 .products article .btn-add {
