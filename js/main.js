@@ -66,6 +66,22 @@
         },
       });
 
+      var swiper = new Swiper(".smallImgs", {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".gallery", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
     //   show Consultants
     let showConsultants=Array.from(document.getElementsByClassName('showConsultants'));
 

@@ -129,6 +129,9 @@
 .h-476{
     height: 476px;
 }
+.h-650{
+    height: 650px;
+}
 .w-26{
     width: 26px;
 }
@@ -155,6 +158,13 @@
 }
 .w-150{
     width: 150px;
+}
+.max-w-966{
+    max-width: 966px!important;
+    width: 100%;
+}
+.overflow-y-auto{
+    overflow-y: auto;
 }
 .top-65{
     top: 65px;
@@ -303,6 +313,16 @@ a:hover{
     right: auto!important;
     left: 90px!important;
     top: 13px;
+  }
+  .smallImgs img {
+    height: 100%;
+    width: 100%;
+  }
+.smallImgs .swiper-slide-thumb-active {
+    opacity: 1!important;
+  }
+  .smallImgs .swiper-slide {
+    opacity: 0.4;
   }
   .showConsultants svg {
     transition: all .4s;
