@@ -82,6 +82,20 @@
             swiper: swiper,
         },
     });
+    var vertical = new Swiper(".vertical", {
+        direction: "vertical",
+        loop: true,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     //   show Consultants
     let showConsultants=Array.from(document.getElementsByClassName('showConsultants'));
 
