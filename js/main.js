@@ -732,3 +732,25 @@ $(window).on('load', function () {
           prevEl: ".swiper-button-prev",
         },
       });
+    //   
+    let openDropdown=Array.from(document.getElementsByClassName('openDropdown'));
+    let dropdownItem=Array.from(document.querySelectorAll('.dropdownMenu > div'))
+
+    openDropdown.forEach((item)=>{
+        item.addEventListener('click',function () {
+            item.querySelector('.dropdownMenu').classList.toggle('active');
+            document.addEventListener('click', (event) => {
+                if (!event.target.closest('.openDropdown')) {
+                    item.querySelector('.dropdownMenu').classList.remove('active');
+                }
+              })
+        })
+    })
+    dropdownItem.forEach((item)=>{
+        item.addEventListener('click',function () {
+            let itemText=item.querySelector('p').textContent;
+            let itemImg=item.querySelector('img').src;
+            item.parentElement.parentElement.querySelector('.name').textContent=itemText;
+            item.parentElement.parentElement.querySelector('.img').src=itemImg;
+        })
+    })
