@@ -16,86 +16,6 @@
         }
     })
 
-    // swiper
-    var Consultants = new Swiper(".Consultants", {
-        loop: true,
-        spaceBetween: 40,
-        slidesPerView: 1,
-        breakpoints: {
-          576: {
-            slidesPerView: 2,
-          },
-          992: {
-            slidesPerView: 3,
-          },
-          1200: {
-            slidesPerView: 4,
-          },
-          1400: {
-            slidesPerView: 5,
-          }
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var suggestion = new Swiper(".suggestion", {
-        loop: true,
-        spaceBetween: 40,
-        slidesPerView: 1.3,
-        breakpoints: {
-          576: {
-            slidesPerView: 2.3,
-          },
-          992: {
-            slidesPerView: 3.3,
-          }
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      var swiper = new Swiper(".smallImgs", {
-        spaceBetween: 10,
-        slidesPerView: 5,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".gallery", {
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
-    });
-    var vertical = new Swiper(".vertical", {
-        direction: "vertical",
-        loop: true,
-        spaceBetween: 0,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
     //   show Consultants
     let showConsultants=Array.from(document.getElementsByClassName('showConsultants'));
 
@@ -731,3 +651,84 @@ $(window).on('load', function () {
 
 
 
+
+    // swiper
+    var Consultants = new Swiper(".Consultants", {
+        loop: true,
+        spaceBetween: 40,
+        slidesPerView: 1,
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+          1400: {
+            slidesPerView: 5,
+          }
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var suggestion = new Swiper(".suggestion", {
+        loop: true,
+        spaceBetween: 40,
+        slidesPerView: 1.3,
+        breakpoints: {
+          576: {
+            slidesPerView: 2.3,
+          },
+          992: {
+            slidesPerView: 3.3,
+          }
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".smallImgs", {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".gallery", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+    var vertical = new Swiper(".vertical", {
+        direction: "vertical",
+        loop: true,
+        spaceBetween: 0,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
