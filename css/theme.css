@@ -69,6 +69,12 @@
     Default body styles
     ----------------------------------
 */
+.header2{
+    background-color: rgba(255, 255, 255, 0.17);
+  backdrop-filter: blur(4px);
+  position: sticky;
+  top: 0;
+}
 .transition{
     transition: all .4s;
 }
@@ -83,6 +89,9 @@
 }
 .text-black-hover:hover h3,.text-black-hover:hover p{
     color: black!important;
+}
+.gray-hover:hover{
+    background-color: rgb(224, 224, 224);
 }
 .cursor{
     cursor: pointer;
@@ -116,6 +125,9 @@
 }
 .h-269{
     height: 269px;
+}
+.h-277{
+    height: 277px;
 }
 .h-380{
     height: 380px;
@@ -206,7 +218,7 @@ a:hover{
     background-color: #edecec;
 }
 .bg-black{
-    background-color: black!important;
+    background-color: black;
 }
 .bg-dark2{
     background-color: #1f1f1f;
@@ -243,6 +255,12 @@ a:hover{
 }
 .p-16{
     padding: 16px;
+}
+.mt-283{
+    margin-top: 283px;
+}
+.-top-41{
+    top:-41px
 }
 .border-t-gold-2{
     border-top: 2px solid #916250;
@@ -497,9 +515,9 @@ a:hover{
   
   
 @font-face {
-    font-family: yekanBakh-Regular;
+    font-family: IRANSans-Regular;
   
-    src: url('../fonts/Rokh-Black.ttf') format("truetype")!important;
+    src: url('../fonts/IRANSansXFaNum-Regular.woff') format("woff")!important;
   }
 
 * {
@@ -510,7 +528,7 @@ a{
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: IRANSans-Regular!important;
     font-size: 14px;
     line-height: 1.5;
     color: #666666;
@@ -1300,7 +1318,9 @@ nav {
     text-align: right;
 }
 nav a.active{
-    color: #916250!important;
+    color: #916250 !important;
+  font-weight: bold;
+  text-shadow: 0 0 3px black;
 }
 @media print {
     nav {

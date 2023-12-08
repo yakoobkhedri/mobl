@@ -12,7 +12,7 @@
     })
     document.addEventListener('mousemove', (event) => {
         if (!event.target.closest('.productArea')) {
-            header2.style.backgroundColor='transparent';
+            header2.style.backgroundColor='rgba(255, 255, 255, 0.17)';
         }
     })
 
