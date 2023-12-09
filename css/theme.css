@@ -289,6 +289,19 @@ a:hover{
 #offcanvasMenu {
     z-index: 1036;
 }
+.catCard{
+    height: 530px;
+    background-color: black;
+}
+.catCard img{
+    opacity: .6;;
+}
+.catCard:hover > div{
+    background-color: black;
+}
+.catCard:hover svg{
+   opacity: 100%;
+}
 .modal-backdrop {
     z-index: 1034;
 }
@@ -7483,3 +7496,18 @@ footer .footer-social li a {
 /* Version 1.1.0. 
  * Theme credit ElaThemes.com */
 
+@media (max-width:1200px){
+    .catCard{
+        height: 394px;
+    }
+}
+@media (max-width: 991px) {
+    .catCard{
+        height: 374px;
+    }
+}
+@media (max-width: 400px) {
+    .catCard{
+        height: 344px;
+    }
+}

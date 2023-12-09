@@ -4,23 +4,23 @@
 
     // dropdown menu
 
-    let productLink=document.getElementById('productLink');
-    let header2=document.querySelector('.header2');
+    let productLink = document.getElementById('productLink');
+    let header2 = document.querySelector('.header2');
 
-    productLink.addEventListener('mouseenter',function () {
-        header2.style.backgroundColor='black';
+    productLink.addEventListener('mouseenter', function () {
+        header2.style.backgroundColor = 'black';
     })
     document.addEventListener('mousemove', (event) => {
         if (!event.target.closest('.productArea')) {
-            header2.style.backgroundColor='rgba(255, 255, 255, 0.17)';
+            header2.style.backgroundColor = 'rgba(255, 255, 255, 0.17)';
         }
     })
 
     //   show Consultants
-    let showConsultants=Array.from(document.getElementsByClassName('showConsultants'));
+    let showConsultants = Array.from(document.getElementsByClassName('showConsultants'));
 
-    showConsultants.forEach((item)=>{
-        item.addEventListener('click',function () {
+    showConsultants.forEach((item) => {
+        item.addEventListener('click', function () {
             item.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle('active');
             item.querySelector('svg').classList.toggle('active');
         })
@@ -270,12 +270,12 @@
         function resetAnimation(event) {
             // catch all slides
             var items = $(n).find('.owl-item');
-                // for each add animation end
-                $.each(items.find('.animated'), function (j, m) {
-                    var item = $(m);
-                    item.removeClass(item.data('start'));
-                    item.addClass('fadeOut');
-                });
+            // for each add animation end
+            $.each(items.find('.animated'), function (j, m) {
+                var item = $(m);
+                item.removeClass(item.data('start'));
+                item.addClass('fadeOut');
+            });
         }
         var navHeight = $('nav').height();
 
@@ -490,7 +490,7 @@
             var link = $this.attr('data');
             $this.after('<span class="caption">' + caption + '</span>');
         }
-    }); 
+    });
 
     // Coupon code 
     // ----------------------------------------------------------------
@@ -503,7 +503,7 @@
             $(".form-coupon").fadeOut();
         }
     });
-     
+
     // Checkout login / register
     // ----------------------------------------------------------------
 
@@ -629,22 +629,22 @@ $(window).on('load', function () {
     // Adjust height of tabsy gallery
 
     if ($(window).width() > 992) {
-            $(window).on('resize', function () {
-                //adjustTabsyHeight();
-            });
-
+        $(window).on('resize', function () {
             //adjustTabsyHeight();
+        });
 
-            // Height function
+        //adjustTabsyHeight();
 
-            //function adjustTabsyHeight() {
-            //    var navheight = $('nav').height(),
-            //        icoheight = $('.owl-icons-wrapper').height();
+        // Height function
 
-            //    // Set tabsy height
-            //    $('.tabsy-wrapper-intro .tabsy figure').css("height", $(window).height() - navheight - icoheight);
+        //function adjustTabsyHeight() {
+        //    var navheight = $('nav').height(),
+        //        icoheight = $('.owl-icons-wrapper').height();
 
-            //}
+        //    // Set tabsy height
+        //    $('.tabsy-wrapper-intro .tabsy figure').css("height", $(window).height() - navheight - icoheight);
+
+        //}
     }
 
 });
@@ -652,105 +652,108 @@ $(window).on('load', function () {
 
 
 
-    // swiper
-    var Consultants = new Swiper(".Consultants", {
-        loop: true,
-        spaceBetween: 40,
-        slidesPerView: 1,
-        breakpoints: {
-          576: {
+// swiper
+var Consultants = new Swiper(".Consultants", {
+    loop: true,
+    spaceBetween: 40,
+    slidesPerView: 1,
+    breakpoints: {
+        576: {
             slidesPerView: 2,
-          },
-          992: {
+        },
+        992: {
             slidesPerView: 3,
-          },
-          1200: {
+        },
+        1200: {
             slidesPerView: 4,
-          },
-          1400: {
+        },
+        1400: {
             slidesPerView: 5,
-          }
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-      var suggestion = new Swiper(".suggestion", {
-        loop: true,
-        spaceBetween: 40,
-        slidesPerView: 1.3,
-        breakpoints: {
-          576: {
+        }
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+var suggestion = new Swiper(".suggestion", {
+    loop: true,
+    spaceBetween: 40,
+    slidesPerView: 1.3,
+    breakpoints: {
+        576: {
             slidesPerView: 2.3,
-          },
-          992: {
+        },
+        992: {
             slidesPerView: 3.3,
-          }
-        },
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+        }
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
-      var swiper = new Swiper(".smallImgs", {
-        spaceBetween: 10,
-        slidesPerView: 5,
-        freeMode: true,
-        watchSlidesProgress: true,
-    });
-    var swiper2 = new Swiper(".gallery", {
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-            swiper: swiper,
-        },
-    });
-    var vertical = new Swiper(".vertical", {
-        direction: "vertical",
-        loop: true,
-        spaceBetween: 0,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    //   
-    let openDropdown=Array.from(document.getElementsByClassName('openDropdown'));
-    let dropdownItem=Array.from(document.querySelectorAll('.dropdownMenu > div'))
+var swiper = new Swiper(".smallImgs", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".gallery", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+var vertical = new Swiper(".vertical", {
+    direction: "vertical",
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+//   
+let openDropdown = Array.from(document.getElementsByClassName('openDropdown'));
+let dropdownItem = Array.from(document.querySelectorAll('.dropdownMenu > div'))
 
-    openDropdown.forEach((item)=>{
-        item.addEventListener('click',function () {
-            item.querySelector('.dropdownMenu').classList.toggle('active');
-            document.addEventListener('click', (event) => {
-                if (!event.target.closest('.openDropdown')) {
-                    item.querySelector('.dropdownMenu').classList.remove('active');
-                }
-              })
+openDropdown.forEach((item) => {
+    item.addEventListener('click', function () {
+        item.querySelector('.dropdownMenu').classList.toggle('active');
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.openDropdown')) {
+                item.querySelector('.dropdownMenu').classList.remove('active');
+            }
         })
     })
-    dropdownItem.forEach((item)=>{
-        item.addEventListener('click',function () {
-            let itemText=item.querySelector('p').textContent;
-            let itemImg=item.querySelector('img').src;
-            item.parentElement.parentElement.querySelector('.name').textContent=itemText;
-            item.parentElement.parentElement.querySelector('.img').src=itemImg;
-        })
+})
+dropdownItem.forEach((item) => {
+    item.addEventListener('click', function () {
+        let itemText = item.querySelector('p').textContent;
+        let itemImg = item.querySelector('img').src;
+        item.parentElement.parentElement.querySelector('.name').textContent = itemText;
+        item.parentElement.parentElement.querySelector('.img').src = itemImg;
     })
+})
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
