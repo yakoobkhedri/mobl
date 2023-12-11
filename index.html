@@ -333,18 +333,16 @@
     </div>
 
     <!-- suggestion modal -->
-    <div class="modal fade bg-gray" id="suggestionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bg-gray overflow-hidden" id="suggestionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered m-0 max-w-100 h-100">
             <div class="modal-content h-100 rounded-0 border-0 bg-transparent">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="swiper suggestModal">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-lg-6 h-900 overflow-y-auto">
+                                    <div class="col-lg-6 h-100vh overflow-y-auto pb-5">
                                      <a class="d-block"><img alt="logo" src="assets/images/logo.png" class="img-fluid"></a>
                                      <h6 class="mb-0">دکوراسیون</h6>
                                      <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
@@ -358,7 +356,7 @@
                                      <h3 class="fw-bold text-dark">4 محصول</h3>
                                      <div class="row g-1 mx-0 mt-4">
                                        <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4 h-330">
+                                        <a href="single-product.html" class="d-block bg-white p-4">
                                             <div class="d-flex align-items-center justify-content-center h-75">
                                                 <img alt="product" src="assets/images/bar-dolabi-9.jpg" class="img-fluid w-75 mx-auto d-block">
                                             </div>
@@ -367,7 +365,7 @@
                                         </a>
                                        </div>
                                        <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4 h-330">
+                                        <a href="single-product.html" class="d-block bg-white p-4">
                                             <div class="d-flex align-items-center justify-content-center h-75">
                                                 <img alt="product" src="assets/images/bona-sandalye-4.jpg" class="img-fluid w-75 mx-auto d-block">
                                             </div>
@@ -376,7 +374,7 @@
                                         </a>
                                        </div>
                                        <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4 h-330">
+                                        <a href="single-product.html" class="d-block bg-white p-4">
                                             <div class="d-flex align-items-center justify-content-center h-75">
                                                 <img alt="product" src="assets/images/petra-abajur-1.jpg" class="img-fluid w-75 mx-auto d-block">
                                             </div>
@@ -385,7 +383,7 @@
                                         </a>
                                        </div>
                                        <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4 h-330">
+                                        <a href="single-product.html" class="d-block bg-white p-4">
                                             <div class="d-flex align-items-center justify-content-center h-75">
                                                 <img alt="product" src="assets/images/vasili-masa-2.jpg" class="img-fluid w-75 mx-auto d-block">
                                             </div>
@@ -400,10 +398,24 @@
                                      </p>
                                      <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold">کاوش</a>
                                     </div>
-                                    <div class="col-lg-6">
-
+                                    <div class="col-lg-6 h-100vh">
+                                     <div class="position-relative">
+                                        <img alt="product" src="assets/images/MTg3_20220118171855.jpg" class="img-fluid w-100">
+                                     </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="swiper-button-next m-3 h-48 w-90 bg-white rounded-8 mt-5" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ab02a310d50281648">
+                                <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M34.5 9H1.5M1.5 9L9.5 1M1.5 9L9.5 17" stroke="#282828"></path>
+                                </svg>
+                            </div>
+                            <div style="left: 109px!important;" class="swiper-button-prev m-3 mt-5 h-48 w-90 bg-white rounded-8" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ab02a310d50281648">
+                                <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 9H33.5M33.5 9L25.5 1M33.5 9L25.5 17" stroke="#282828"></path>
+                                </svg>
                             </div>
                         </div>
                     </div>
