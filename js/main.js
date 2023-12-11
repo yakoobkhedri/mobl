@@ -701,7 +701,15 @@ var suggestion = new Swiper(".suggestion", {
         prevEl: ".swiper-button-prev",
     },
 });
-
+var suggestModal = new Swiper(".suggestModal", {
+    loop: true,
+    spaceBetween: 0,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 var swiper = new Swiper(".smallImgs", {
     spaceBetween: 10,
     slidesPerView: 5,

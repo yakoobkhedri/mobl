@@ -132,6 +132,9 @@
 .h-277{
     height: 277px;
 }
+.h-330{
+    height: 330px;
+}
 .h-380{
     height: 380px;
 }
@@ -149,6 +152,9 @@
 }
 .h-800{
     height: 800px;
+}
+.h-900{
+    height: 900px;
 }
 .w-26{
     width: 26px;
@@ -179,6 +185,13 @@
 }
 .w-150{
     width: 150px;
+}
+.w-385{
+    width: 385px;
+}
+.max-w-100{
+    max-width: 100%!important;
+    width: 100%;
 }
 .max-w-966{
     max-width: 966px!important;
