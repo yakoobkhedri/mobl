@@ -135,6 +135,9 @@
 .h-277{
     height: 277px;
 }
+.h-300{
+    height: 300px;
+}
 .h-330{
     height: 330px;
 }
@@ -295,6 +298,9 @@ a:hover{
 }
 .opacity-none{
     opacity: 0;
+}
+.opacity-100{
+    opacity: 100%;
 }
 .visibility-none{
     visibility: hidden;
