@@ -308,6 +308,13 @@ a:hover{
 .object-cover{
     object-fit: cover;
 }
+.project-banner{
+    background-image: url('../assets/images/abraj-quartier-towers-sea-pearl.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+}
 #offcanvasMenu {
     z-index: 1036;
 }
