@@ -128,6 +128,9 @@ nav select{
 .h-110{
     height: 110px;
 }
+.h-236{
+    height: 236px;
+}
 .h-255{
     height: 255px;
 }
@@ -204,6 +207,10 @@ nav select{
     max-width: 100%!important;
     width: 100%;
 }
+.max-w-768{
+    max-width: 768px!important;
+    width: 100%;
+}
 .max-w-966{
     max-width: 966px!important;
     width: 100%;
@@ -213,6 +220,9 @@ nav select{
 }
 .top-65{
     top: 65px;
+}
+.-top-72{
+    top: -72px;
 }
 .-right-32{
     right: -32px;
@@ -296,7 +306,7 @@ a:hover{
     border-top: 2px solid #916250;
 }
 .rounded-8{
-    border-radius: 8px;
+    border-radius: 8px!important;
 }
 .rounded-b-10{
     border-radius: 0 0 10px 10px;
@@ -7520,6 +7530,9 @@ footer .footer-social li a {
         -ms-flex: 0 0 300px;
         -webkit-flex: 0 0 300px;
         flex: 0 0 300px;
+    }
+    .top-md-auto{
+        top: auto;
     }
 }
 @media (max-width: 576px) {
