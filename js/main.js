@@ -1,7 +1,13 @@
 ﻿$(function () {
 
     "use strict";
-
+    $(window).on('scroll load' , function () {
+        if ($(window).scrollTop() > 120) {
+            $('#navbar').css('background-color', 'black');
+        } else {
+            $('#navbar').css('background-color', 'rgba(0 , 0 , 0 , 0)');
+        }
+    });
     // dropdown menu
 
     let productLink = document.getElementById('productLink');

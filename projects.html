@@ -361,7 +361,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header2 transition">
+            <div id="navbar" class="header2 transition">
                 <div class="container px-4 position-static">
                     <div class="h-110 d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center gap-5 h-100">
@@ -1010,6 +1010,8 @@
     </div> <!--/wrapper-->
 
     <!--Scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -1020,44 +1022,6 @@
     <script src="js/jquery.easypiechart.js"></script>
     <script src="js/bigtext.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-        function initMap() {
-            var contentString =
-                '<div class="map-info-window">' +
-                '<p><img src="assets/images/divano-logo.png" alt="" width="150"></p>' +
-                '<p><strong>Divano - Furniture Template</strong></p>' +
-                '<p><i class="fa fa-map-marker"></i> 200 12th Ave, New York, NY 10001, USA</p>' +
-                '<p><i class="fa fa-phone"></i> +12 33 444 555</p>' +
-                '<p><i class="fa fa-clock-o"></i> 10am - 6pm</p>' +
-                '</div>';
-
-            var infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-            //set default pposition
-            var myLatLng = { lat: 40.7459772, lng: -74.0545504 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
-                center: myLatLng,
-                styles: [{ "featureType": "administrative", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 20 }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 40 }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "visibility": "on" }, { "saturation": -10 }, { "lightness": 30 }] }, { "featureType": "landscape.man_made", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 10 }] }, { "featureType": "landscape.natural", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 60 }] }, { "featureType": "poi", "elementType": "all", "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }] }, { "featureType": "transit", "elementType": "all", "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }] }]
-            });
-            //set marker
-            var image = 'assets/images/map-icon.png';
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: "Hello World!",
-                icon: image
-            });
-            marker.addListener('click', function () {
-                infowindow.open(map, marker);
-            });
-        }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAabaAL675kRhFvfrPEmjFUirXHk2cA9Dc&callback=initMap"></script>
-
 </body>
 
 </html>
