@@ -74,6 +74,9 @@
   position: sticky;
   top: 0;
 }
+nav select{
+    box-shadow: inset 1px 1px 27px rgba(5, 5, 5, 0.82)!important;
+}
 .transition{
     transition: all .4s;
 }
