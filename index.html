@@ -517,7 +517,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header2 transition">
+            <div class="header2 transition" id="navbar">
                 <div class="container px-4 position-static">
                     <div class="h-110 d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center gap-5 h-100">
@@ -1813,9 +1813,19 @@
 
 
     </div> <!--/wrapper-->
-
     <!--Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        
+$(window).on('scroll load' , function () {
+    if ($(window).scrollTop() > 120) {
+        $('#navbar').css('background-color', 'black');
+    } else {
+        $('#navbar').css('background-color', 'rgba(0 , 0 , 0 , 0)');
+    }
+});
+    </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

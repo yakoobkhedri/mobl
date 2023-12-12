@@ -10,12 +10,9 @@
     productLink.addEventListener('mouseenter', function () {
         header2.style.backgroundColor = 'black';
     })
-    document.addEventListener('mousemove', (event) => {
-        if (!event.target.closest('.productArea')) {
-            header2.style.backgroundColor = 'rgba(255, 255, 255, 0.17)';
-        }
+    productLink.addEventListener('mouseleave', function () {
+        header2.style.backgroundColor = 'rgba(255, 255, 255, 0)';
     })
-
     //   show Consultants
     let showConsultants = Array.from(document.getElementsByClassName('showConsultants'));
 
