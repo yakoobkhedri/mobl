@@ -685,10 +685,10 @@ var Consultants = new Swiper(".Consultants", {
 });
 var suggestion = new Swiper(".suggestion", {
     loop: true,
-    spaceBetween: 40,
+    spaceBetween: 20,
     slidesPerView: 1.3,
     breakpoints: {
-        576: {
+        768: {
             slidesPerView: 2.3,
         },
         992: {
