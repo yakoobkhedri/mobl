@@ -154,6 +154,9 @@ nav select{
 .h-420{
     height: 420px!important;
 }
+.h-450{
+    height: 450px!important;
+}
 .h-476{
     height: 476px;
 }
@@ -198,6 +201,9 @@ nav select{
 }
 .w-220{
     width: 220px;
+}
+.w-320{
+    width: 320px;
 }
 .w-385{
     width: 385px;
@@ -328,6 +334,18 @@ a:hover{
     background-position: center;
     background-repeat: no-repeat;
     margin-top: -150px;
+}
+.catBg{
+    background-image: url('../assets/images/category.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.projectBg{
+    background-image: url('../assets/images/projects.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #offcanvasMenu {
     z-index: 1036;
@@ -2511,7 +2529,7 @@ nav .cart-wrapper.open {
     overflow: hidden;
     position: relative;
 }
-.header-content .owl-slider .item::after{
+.header-content .owl-slider .item::after,.catBg::after,.projectBg::after,.overlay::after{
     position: absolute;
     inset: 0;
     content: '';
@@ -7511,6 +7529,9 @@ footer .footer-social li a {
         -ms-flex: 0 0 500px;
         -webkit-flex: 0 0 500px;
         flex: 0 0 500px;
+    }
+    .vertical .h-800{
+        height: 400px;
     }
 }
 

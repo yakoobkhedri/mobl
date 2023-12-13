@@ -346,7 +346,7 @@
 
         <!-- ======================== Navigation ======================== -->
 
-        <nav class="position-sticky -top-41 bg-black">
+        <nav class="position-sticky -top-41">
             <div class="bg-black">
                 <div class="container px-4">
                     <div class="d-flex align-items-center gap-5 bg-black h-40">
@@ -363,7 +363,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header2 transition">
+            <div class="header2 transition" id="navbar">
                 <div class="container px-4 position-static">
                     <div class="h-110 d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center gap-5 h-100">
@@ -547,9 +547,7 @@
 
         <!-- ========================  banner ======================== -->
 
-        <section class="contact h-100vh project-banner">
-            <div class="position-relative">
-            </div>
+        <section class="contact overlay position-relative h-100vh project-banner">
         </section>
 
         <!-- ========================  project details ======================== -->
@@ -612,8 +610,8 @@
             <div class="container">
                 <h3>محصولات استفاده شده در این پروژه</h3>
             </div>
-            <div class="mt-4 products">
-                <div class="swiper suggestion pt-4">
+            <div class="mt-4 products me-0 container ms-0">
+                <div class="swiper suggestion pt-4 ps-3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <article class="h-410 bg-white">
@@ -809,13 +807,27 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-4">
-                <div class="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-between">
+            <div class="container mt-4 me-0">
+                <div class="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-around">
                     <p class="mb-0 text-dark fw-bold">محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای می گذارد.</p>
                     <a class="btn btn-outline-dark px-5">همه محصولات</a>
                 </div>
             </div>
         </section>
+
+          <!-- ========================  solution ======================== -->
+
+          <section class="pt-5 pb-0 bg-white">
+            <div class="container text-dark my-5">
+             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4">
+               <div>
+                  <h3 class="fw-bold">راه حل هایی برای<br class="d-none d-sm-inline"> حرفه ای ها</h3>
+                  <p class="w-50 w-sm-100">  ما تجربه 30 ساله خود را با شما به اشتراک می گذاریم که در آن با طراحی های منحصر به فرد، معاصر و زیبایی به این بخش ارزش افزوده ایم.</p>
+               </div>
+               <a class="rounded-8 text-center bg-black me-auto py-2 d-block w-220 w-sm-100 text-white">ارتباطات شرکتی</a>
+             </div>
+            </div>
+          </section>
 
         <!-- ========================  about ======================== -->
 
@@ -906,8 +918,8 @@
             <div class="container">
                 <h3>محصولات محبوب</h3>
             </div>
-            <div class="mt-4 products">
-                <div class="swiper suggestion pt-4">
+            <div class="mt-4 products me-0 container ms-0">
+                <div class="swiper suggestion pt-4 ps-3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <article class="h-410 bg-white">
