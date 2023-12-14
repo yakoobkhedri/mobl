@@ -277,6 +277,12 @@ a:hover{
 .bg-dark3{
     background-color: #3c3c3c;
 }
+.bg-pink{
+    background: #fff3f5;
+}
+.bg-sky{
+    background-color: #eaf3fc;
+}
 .text-gold{
     color: #916250;
 }
@@ -650,6 +656,9 @@ a{
   }
   .HotspotPlugin_Hotspot {
     background-color: white;
+  }
+  .HotspotPlugin_Hotspot {
+    z-index: 0;
   }
 body {
     font-family: 'IRANSans-Regular'!important;
