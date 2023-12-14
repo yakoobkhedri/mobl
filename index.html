@@ -27,6 +27,7 @@
     <link rel="stylesheet" media="all" href="css/magnific-popup.css" />
     <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
     <link rel="stylesheet" media="all" href="css/swiper.min.css" />
+    <link rel="stylesheet" media="all" href="css/jquery.hotspot.css" />
     <link rel="stylesheet" media="all" href="css/theme.css" />
 
     <!--Google fonts-->
@@ -333,152 +334,199 @@
     </div>
 
     <!-- suggestion modal -->
-    <div class="modal fade bg-gray overflow-hidden" id="suggestionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bg-gray overflow-hidden" id="suggestionModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered m-0 max-w-100 h-100">
             <div class="modal-content h-100 rounded-0 border-0 bg-transparent">
                 <div class="modal-body position-relative">
-                    <button type="button" class="btn-close position-absolute z-10 bg-white border p-1 opacity-100 w-36 h-36 rounded-8" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button"
+                        class="btn-close position-absolute z-10 bg-white border p-1 opacity-100 w-36 h-36 rounded-8"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="swiper suggestModal">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="row">
                                     <div class="col-lg-6 h-100vh overflow-y-auto py-5">
-                                     <a class="d-block"><img alt="logo" src="assets/images/logo.png" class="img-fluid"></a>
-                                     <h6 class="mb-0">دکوراسیون</h6>
-                                     <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
-                                     <div class="bg-white p-4 my-4 w-385">
-                                       <h3 class="fw-bold text-gold">مخصوص نیاز شما</h3>
-                                       <p>
-                                        با استفاده از خدمات مشاوره آنلاین ما می توانید با تیم معماری متخصص ما فضاهای زندگی خود را طراحی کنید.
-                                       </p>
-                                       <a class="btn btn-outline-dark fw-bold py-2 px-4">قرار گذاشتن</a>
-                                     </div>
-                                     <h3 class="fw-bold text-dark">4 محصول</h3>
-                                     <div class="row g-1 mx-0 mt-4">
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/bar-dolabi-9.jpg" class="img-fluid w-75 mx-auto d-block">
+                                        <a class="d-block"><img alt="logo" src="assets/images/logo.png"
+                                                class="img-fluid"></a>
+                                        <h6 class="mb-0">دکوراسیون</h6>
+                                        <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
+                                        <div class="bg-white p-4 my-4 w-385">
+                                            <h3 class="fw-bold text-gold">مخصوص نیاز شما</h3>
+                                            <p>
+                                                با استفاده از خدمات مشاوره آنلاین ما می توانید با تیم معماری متخصص ما
+                                                فضاهای زندگی خود را طراحی کنید.
+                                            </p>
+                                            <a class="btn btn-outline-dark fw-bold py-2 px-4">قرار گذاشتن</a>
+                                        </div>
+                                        <h3 class="fw-bold text-dark">5 محصول</h3>
+                                        <div class="row g-1 mx-0 mt-4">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/motto-kose-koltuk-6.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">بوفه</h3>
+                                                    <p class="mb-0 text-muted">کابینت بوفه</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">بوفه</h3>
-                                          <p class="mb-0 text-muted">کابینت بوفه</p>
-                                        </a>
-                                       </div>
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/bona-sandalye-4.jpg" class="img-fluid w-75 mx-auto d-block">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/vega-berjer-13.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">بونا</h3>
+                                                    <p class="mb-0 text-muted">صندلی</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">بونا</h3>
-                                          <p class="mb-0 text-muted">صندلی</p>
-                                        </a>
-                                       </div>
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/petra-abajur-1.jpg" class="img-fluid w-75 mx-auto d-block">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/black-orta-sehpa-4.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">پترا</h3>
+                                                    <p class="mb-0 text-muted">چراغ رومیزی</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">پترا</h3>
-                                          <p class="mb-0 text-muted">چراغ رومیزی</p>
-                                        </a>
-                                       </div>
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/vasili-masa-2.jpg" class="img-fluid w-75 mx-auto d-block">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/news-yan-sehpa-4.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                    <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
-                                          <p class="mb-0 text-muted">میز ناهارخوری</p>
-                                        </a>
-                                       </div>
-                                     </div>
-                                     <h3 class="text-dark fw-bold mt-4">کاوش بیشتر</h3>
-                                     <p class="mb-4 pb-2">
-                                        محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای می گذارد.
-                                     </p>
-                                     <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold">کاوش</a>
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/carya-c-sehpa-5.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                    <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="text-dark fw-bold mt-4">کاوش بیشتر</h3>
+                                        <p class="mb-4 pb-2">
+                                            محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای
+                                            می گذارد.
+                                        </p>
+                                        <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold">کاوش</a>
                                     </div>
                                     <div class="col-lg-6 h-100vh d-flex align-items-center justify-content-center">
-                                     <div class="position-relative">
-                                        <img alt="product" src="assets/images/MTg3_20220118171855.jpg" class="img-fluid w-100">
-                                     </div>
+                                        <div class="position-relative">
+                                            <div id="theElement-0">
+                                                <img src="assets/images/d1.jpg">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
                                     <div class="col-lg-6 h-100vh overflow-y-auto py-5">
-                                     <a class="d-block"><img alt="logo" src="assets/images/logo.png" class="img-fluid"></a>
-                                     <h6 class="mb-0">دکوراسیون</h6>
-                                     <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
-                                     <div class="bg-white p-4 my-4 w-385">
-                                       <h3 class="fw-bold text-gold">مخصوص نیاز شما</h3>
-                                       <p>
-                                        با استفاده از خدمات مشاوره آنلاین ما می توانید با تیم معماری متخصص ما فضاهای زندگی خود را طراحی کنید.
-                                       </p>
-                                       <a class="btn btn-outline-dark fw-bold py-2 px-4">قرار گذاشتن</a>
-                                     </div>
-                                     <h3 class="fw-bold text-dark">4 محصول</h3>
-                                     <div class="row g-1 mx-0 mt-4">
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/bar-dolabi-9.jpg" class="img-fluid w-75 mx-auto d-block">
+                                        <a class="d-block"><img alt="logo" src="assets/images/logo.png"
+                                                class="img-fluid"></a>
+                                        <h6 class="mb-0">دکوراسیون</h6>
+                                        <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
+                                        <div class="bg-white p-4 my-4 w-385">
+                                            <h3 class="fw-bold text-gold">مخصوص نیاز شما</h3>
+                                            <p>
+                                                با استفاده از خدمات مشاوره آنلاین ما می توانید با تیم معماری متخصص ما
+                                                فضاهای زندگی خود را طراحی کنید.
+                                            </p>
+                                            <a class="btn btn-outline-dark fw-bold py-2 px-4">قرار گذاشتن</a>
+                                        </div>
+                                        <h3 class="fw-bold text-dark">5 محصول</h3>
+                                        <div class="row g-1 mx-0 mt-4">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/motto-kose-koltuk-6.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">بوفه</h3>
+                                                    <p class="mb-0 text-muted">کابینت بوفه</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">بوفه</h3>
-                                          <p class="mb-0 text-muted">کابینت بوفه</p>
-                                        </a>
-                                       </div>
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/bona-sandalye-4.jpg" class="img-fluid w-75 mx-auto d-block">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/vega-berjer-13.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">بونا</h3>
+                                                    <p class="mb-0 text-muted">صندلی</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">بونا</h3>
-                                          <p class="mb-0 text-muted">صندلی</p>
-                                        </a>
-                                       </div>
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/petra-abajur-1.jpg" class="img-fluid w-75 mx-auto d-block">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/black-orta-sehpa-4.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">پترا</h3>
+                                                    <p class="mb-0 text-muted">چراغ رومیزی</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">پترا</h3>
-                                          <p class="mb-0 text-muted">چراغ رومیزی</p>
-                                        </a>
-                                       </div>
-                                       <div class="col-6">
-                                        <a href="single-product.html" class="d-block bg-white p-4">
-                                            <div class="d-flex align-items-center justify-content-center h-300">
-                                                <img alt="product" src="assets/images/vasili-masa-2.jpg" class="img-fluid w-75 mx-auto d-block">
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/news-yan-sehpa-4.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                    <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                                </a>
                                             </div>
-                                          <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
-                                          <p class="mb-0 text-muted">میز ناهارخوری</p>
-                                        </a>
-                                       </div>
-                                     </div>
-                                     <h3 class="text-dark fw-bold mt-4">کاوش بیشتر</h3>
-                                     <p class="mb-4 pb-2">
-                                        محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای می گذارد.
-                                     </p>
-                                     <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold">کاوش</a>
+                                            <div class="col-6">
+                                                <a href="single-product.html" class="d-block bg-white p-4">
+                                                    <div class="d-flex align-items-center justify-content-center h-300">
+                                                        <img alt="product" src="assets/images/carya-c-sehpa-5.jpg"
+                                                            class="img-fluid w-75 mx-auto d-block">
+                                                    </div>
+                                                    <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                    <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="text-dark fw-bold mt-4">کاوش بیشتر</h3>
+                                        <p class="mb-4 pb-2">
+                                            محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای
+                                            می گذارد.
+                                        </p>
+                                        <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold">کاوش</a>
                                     </div>
                                     <div class="col-lg-6 h-100vh d-flex align-items-center justify-content-center">
-                                     <div class="position-relative">
-                                        <img alt="product" src="assets/images/MTg3_20220118171855.jpg" class="img-fluid w-100">
-                                     </div>
+                                        <div class="position-relative">
+                                            <div id="theElement-1">
+                                                <img src="assets/images/d1.jpg">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <div class="swiper-button-next m-3 h-48 w-90 bg-white rounded-8 mt-5" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ab02a310d50281648">
-                                <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div class="swiper-button-next m-3 h-48 w-90 bg-white rounded-8 mt-5" tabindex="0"
+                                role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ab02a310d50281648">
+                                <svg width="35" height="18" viewBox="0 0 35 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path d="M34.5 9H1.5M1.5 9L9.5 1M1.5 9L9.5 17" stroke="#282828"></path>
                                 </svg>
                             </div>
-                            <div style="left: 109px!important;" class="swiper-button-prev m-3 mt-5 h-48 w-90 bg-white rounded-8" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ab02a310d50281648">
-                                <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <div style="left: 109px!important;"
+                                class="swiper-button-prev m-3 mt-5 h-48 w-90 bg-white rounded-8" tabindex="0"
+                                role="button" aria-label="Previous slide"
+                                aria-controls="swiper-wrapper-ab02a310d50281648">
+                                <svg width="35" height="18" viewBox="0 0 35 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.5 9H33.5M33.5 9L25.5 1M33.5 9L25.5 17" stroke="#282828"></path>
                                 </svg>
                             </div>
@@ -807,7 +855,8 @@
                                             <span>$1499,99</span>
                                             <span>3499,99</span>
                                         </div>
-                                        <small class="d-none d-sm-block text-white">** قیمت محصولات با تخفیف تا پایان موجودی موجود
+                                        <small class="d-none d-sm-block text-white">** قیمت محصولات با تخفیف تا پایان
+                                            موجودی موجود
                                             می باشد </small>
                                     </div>
                                 </div>
@@ -1266,14 +1315,17 @@
 
         <section class="bg-black py-5">
             <div class="container text-white text-center py-5 my-4">
-              <h6>راه حل هایی برای حرفه ای ها</h6>
-              <h3 class="fw-bold w-50 mx-auto mt-5 pt-5">
-                ما تجربه 30 ساله خود را با شما به اشتراک می گذاریم که در آن با طراحی های منحصر به فرد، معاصر و زیبایی به این بخش ارزش افزوده ایم.
-              </h3>
-              <svg width="200" height="27" viewBox="0 0 200 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M115.567 1.88712C99.0192 1.54462 82.8984 2.7362 67.4568 3.80345C49.1045 5.07186 30.731 6.7038 13.7529 8.96715C13.5252 8.99752 -0.0665491 10.8422 0.870968 11.2304C1.15676 11.3487 1.72862 11.3489 2.16451 11.3614C5.29307 11.4516 11.1232 11.2544 13.3784 11.1798C28.7518 10.6714 43.7834 9.77957 58.743 8.84101C98.6132 6.33958 137.939 3.32046 178.372 1.35259C183.153 1.11991 187.946 0.921586 192.856 0.851646C194.05 0.834636 195.233 0.790442 196.445 0.813627C197.6 0.835709 199.687 0.881449 198.132 1.42109C192.378 3.41791 182.804 4.86492 175.688 6.23716C160.544 9.1575 145.182 11.9813 129.79 14.7855C111.745 18.073 93.4554 21.2443 75.4533 24.5522C72.8145 25.0371 70.0929 25.516 67.6882 26.1045C65.2811 26.6936 69.1039 26.2636 69.5703 26.2155" stroke="#CBAB86" stroke-linecap="round"></path>
-              </svg>
-              <a class="rounded-8 bg-white mx-auto py-2 mt-5 d-block w-220 text-dark">ارتباطات شرکتی</a>
+                <h6>راه حل هایی برای حرفه ای ها</h6>
+                <h3 class="fw-bold w-50 mx-auto mt-5 pt-5">
+                    ما تجربه 30 ساله خود را با شما به اشتراک می گذاریم که در آن با طراحی های منحصر به فرد، معاصر و
+                    زیبایی به این بخش ارزش افزوده ایم.
+                </h3>
+                <svg width="200" height="27" viewBox="0 0 200 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M115.567 1.88712C99.0192 1.54462 82.8984 2.7362 67.4568 3.80345C49.1045 5.07186 30.731 6.7038 13.7529 8.96715C13.5252 8.99752 -0.0665491 10.8422 0.870968 11.2304C1.15676 11.3487 1.72862 11.3489 2.16451 11.3614C5.29307 11.4516 11.1232 11.2544 13.3784 11.1798C28.7518 10.6714 43.7834 9.77957 58.743 8.84101C98.6132 6.33958 137.939 3.32046 178.372 1.35259C183.153 1.11991 187.946 0.921586 192.856 0.851646C194.05 0.834636 195.233 0.790442 196.445 0.813627C197.6 0.835709 199.687 0.881449 198.132 1.42109C192.378 3.41791 182.804 4.86492 175.688 6.23716C160.544 9.1575 145.182 11.9813 129.79 14.7855C111.745 18.073 93.4554 21.2443 75.4533 24.5522C72.8145 25.0371 70.0929 25.516 67.6882 26.1045C65.2811 26.6936 69.1039 26.2636 69.5703 26.2155"
+                        stroke="#CBAB86" stroke-linecap="round"></path>
+                </svg>
+                <a class="rounded-8 bg-white mx-auto py-2 mt-5 d-block w-220 text-dark">ارتباطات شرکتی</a>
             </div>
         </section>
 
@@ -1296,13 +1348,15 @@
         <!-- ========================  reflect ======================== -->
 
         <section class="pt-0">
-            <div class="bg-black text-white fw-bold max-w-768 shadow h-236 mx-auto position-relative -top-72 top-md-auto flex-column flex-md-row d-flex align-items-center justify-content-between gap-4 p-5 start-0 end-0">
+            <div
+                class="bg-black text-white fw-bold max-w-768 shadow h-236 mx-auto position-relative -top-72 top-md-auto flex-column flex-md-row d-flex align-items-center justify-content-between gap-4 p-5 start-0 end-0">
                 <div class="flex-shrink-0">
-                  <h3>شخصیت خود را منعکس کنید</h3>
-                  <a class="btn btn-outline-light py-2 mx-auto d-block w-220 rounded-8">مبل ها</a>
+                    <h3>شخصیت خود را منعکس کنید</h3>
+                    <a class="btn btn-outline-light py-2 mx-auto d-block w-220 rounded-8">مبل ها</a>
                 </div>
-                <p class="mb-0 text-center text-md-end">شما می توانید مفهومی را که دوست دارید با سفارشی کردن رنگ ها و مواد به زندگی خود بیاورید.</p>
-              </div>
+                <p class="mb-0 text-center text-md-end">شما می توانید مفهومی را که دوست دارید با سفارشی کردن رنگ ها و
+                    مواد به زندگی خود بیاورید.</p>
+            </div>
         </section>
 
         <!-- ========================  popular product ======================== -->
@@ -1519,15 +1573,17 @@
         <!-- ========================  solution ======================== -->
 
         <section class="pt-5 pb-0 bg-white">
-          <div class="container text-dark my-5">
-           <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4">
-             <div>
-                <h3 class="fw-bold">راه حل هایی برای<br class="d-none d-sm-inline"> حرفه ای ها</h3>
-                <p class="w-50 w-sm-100">  ما تجربه 30 ساله خود را با شما به اشتراک می گذاریم که در آن با طراحی های منحصر به فرد، معاصر و زیبایی به این بخش ارزش افزوده ایم.</p>
-             </div>
-             <a class="rounded-8 text-center bg-black me-auto py-2 d-block w-220 w-sm-100 text-white">ارتباطات شرکتی</a>
-           </div>
-          </div>
+            <div class="container text-dark my-5">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4">
+                    <div>
+                        <h3 class="fw-bold">راه حل هایی برای<br class="d-none d-sm-inline"> حرفه ای ها</h3>
+                        <p class="w-50 w-sm-100"> ما تجربه 30 ساله خود را با شما به اشتراک می گذاریم که در آن با طراحی
+                            های منحصر به فرد، معاصر و زیبایی به این بخش ارزش افزوده ایم.</p>
+                    </div>
+                    <a class="rounded-8 text-center bg-black me-auto py-2 d-block w-220 w-sm-100 text-white">ارتباطات
+                        شرکتی</a>
+                </div>
+            </div>
         </section>
 
         <!-- ========================  about ======================== -->
@@ -1857,10 +1913,33 @@
     <!--Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.min.js"></script>
     <script src="js/jquery-2.1.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/jquery.easypin.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.hotspot.js"></script>
+    <script type="text/javascript">
+        $("#theElement-0").hotspot({
+            mode: 'display',
+            data: [
+                {"x":32.975781250000004,"y":30.447309176672384,"img":`<div><img src="assets/images/motto-kose-koltuk-6.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":76.57578125,"y":37.15056818181818,"img":`<div><img src="assets/images/news-yan-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":76.57578125,"y":55.15056818181818,"img":`<div><img src="assets/images/vega-berjer-13.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":70.57578125,"y":64.15056818181818,"img":`<div><img src="assets/images/carya-c-sehpa-5.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":46.57578125,"y":62.15056818181818,"img":`<div><img src="assets/images/black-orta-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+            ],
+            interactivity: "hover"
+        });
+        $("#theElement-1").hotspot({
+            mode: 'display',
+            data: [
+                {"x":32.975781250000004,"y":30.447309176672384,"img":`<div><img src="assets/images/motto-kose-koltuk-6.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":76.57578125,"y":37.15056818181818,"img":`<div><img src="assets/images/news-yan-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":76.57578125,"y":55.15056818181818,"img":`<div><img src="assets/images/vega-berjer-13.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":70.57578125,"y":64.15056818181818,"img":`<div><img src="assets/images/carya-c-sehpa-5.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+                {"x":46.57578125,"y":62.15056818181818,"img":`<div><img src="assets/images/black-orta-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+            ],
+            interactivity: "hover"
+        });
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/ion.rangeSlider.js"></script>
     <script src="js/magnific-popup.js"></script>

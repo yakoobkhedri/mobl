@@ -127,6 +127,9 @@ nav select{
 .h-110{
     height: 110px;
 }
+.h-180{
+    height: 180px;
+}
 .h-236{
     height: 236px;
 }
@@ -195,6 +198,9 @@ nav select{
 }
 .w-124{
     width: 124px;
+}
+.w-139{
+    width: 139px;
 }
 .w-150{
     width: 150px;
@@ -609,7 +615,42 @@ a:hover{
 a{
     text-decoration: none;
 }
-
+/* hotspot */
+.HotspotPlugin_Hotspot > div > .Hotspot_Message {
+    height: auto;
+  }
+  .HotspotPlugin_Hotspot > div {
+    height: 250px;
+    top: 114px;
+    position: relative;
+    width: 180px;
+    background: white;
+    left: 17px;
+    box-shadow: 0 0 9px darkgray;
+  }
+  .HotspotPlugin_Hotspot > div > .Hotspot_img div{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .HotspotPlugin_Hotspot > div > .Hotspot_img div img{
+    width: 100%;
+  }
+  .HotspotPlugin_Hotspot > div > .Hotspot_Title {
+    height: auto;
+    font-size: 19px;
+  }
+  .HotspotPlugin_Hotspot > div > .Hotspot_Message {
+    font-size: 11px;
+    font-weight: bold;
+    color: #afaeae;
+    margin-top: -4px;
+  }
+  .HotspotPlugin_Hotspot {
+    background-color: white;
+  }
 body {
     font-family: 'IRANSans-Regular'!important;
     font-size: 14px;
