@@ -27,6 +27,7 @@
     <link rel="stylesheet" media="all" href="css/magnific-popup.css" />
     <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
     <link rel="stylesheet" media="all" href="css/swiper.min.css" />
+    <link rel="stylesheet" media="all" href="css/jquery.hotspot.css" />
     <link rel="stylesheet" media="all" href="css/theme.css" />
 
     <!--Google fonts-->
@@ -334,6 +335,220 @@
               </div>
         </div>
       </div>
+
+      <!-- suggestion modal -->
+    <div class="modal fade bg-gray" id="suggestionModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered m-0 max-w-100 h-100">
+        <div class="modal-content h-100 rounded-0 border-0 bg-transparent">
+            <div class="modal-body position-relative p-0">
+                <button type="button"
+                    class="btn-close -top-44 -right-43 position-absolute z-10 bg-white border p-1 opacity-100 w-36 h-36 rounded-8 m-5"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="swiper suggestModal">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide p-md-5 p-2 bg-sky">
+                            <div class="row">
+                                <div class="col-xl-7 h-100vh h-xl-auto overflow-y-auto py-5 order-1 order-xl-0">
+                                    <a class="d-block"><img alt="logo" src="assets/images/logo.png"
+                                            class="img-fluid"></a>
+                                    <h6 class="mb-0">دکوراسیون</h6>
+                                    <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
+                                    <div class="bg-white p-4 my-4 max-w-385">
+                                        <h3 class="fw-bold text-gold">مخصوص نیاز شما</h3>
+                                        <p>
+                                            با استفاده از خدمات مشاوره آنلاین ما می توانید با تیم معماری متخصص ما
+                                            فضاهای زندگی خود را طراحی کنید.
+                                        </p>
+                                        <a class="btn btn-outline-dark fw-bold py-2 px-4">قرار گذاشتن</a>
+                                    </div>
+                                    <h3 class="fw-bold text-dark">5 محصول</h3>
+                                    <div class="row g-1 mx-0 mt-4">
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/motto-kose-koltuk-6.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">بوفه</h3>
+                                                <p class="mb-0 text-muted">کابینت بوفه</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/vega-berjer-13.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">بونا</h3>
+                                                <p class="mb-0 text-muted">صندلی</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/black-orta-sehpa-4.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">پترا</h3>
+                                                <p class="mb-0 text-muted">چراغ رومیزی</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/news-yan-sehpa-4.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/carya-c-sehpa-5.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-dark fw-bold mt-4">کاوش بیشتر</h3>
+                                    <p class="mb-4 pb-2">
+                                        محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای
+                                        می گذارد.
+                                    </p>
+                                    <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold mb-5 d-block w-130 text-center">کاوش</a>
+                                </div>
+                                <div class="col-xl-5 d-flex align-items-center justify-content-center order-0 order-xl-1">
+                                    <div class="position-relative">
+                                        <div id="theElement-0">
+                                            <img src="assets/images/d1.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-md-5 p-2 bg-pink">
+                            <div class="row">
+                                <div class="col-xl-7 h-100vh h-xl-auto overflow-y-auto py-5 order-1 order-xl-0">
+                                    <a class="d-block"><img alt="logo" src="assets/images/logo.png"
+                                            class="img-fluid"></a>
+                                    <h6 class="mb-0">دکوراسیون</h6>
+                                    <h1 class="fw-bold text-dark mt-1">قهرمانی</h1>
+                                    <div class="bg-white p-4 my-4 max-w-385">
+                                        <h3 class="fw-bold text-gold">مخصوص نیاز شما</h3>
+                                        <p>
+                                            با استفاده از خدمات مشاوره آنلاین ما می توانید با تیم معماری متخصص ما
+                                            فضاهای زندگی خود را طراحی کنید.
+                                        </p>
+                                        <a class="btn btn-outline-dark fw-bold py-2 px-4">قرار گذاشتن</a>
+                                    </div>
+                                    <h3 class="fw-bold text-dark">6 محصول</h3>
+                                    <div class="row g-1 mx-0 mt-4">
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/lins-berjer-62.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">بوفه</h3>
+                                                <p class="mb-0 text-muted">کابینت بوفه</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/kubik-kanepe-42.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">بونا</h3>
+                                                <p class="mb-0 text-muted">صندلی</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/hermes-yan-sehpa-32.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">پترا</h3>
+                                                <p class="mb-0 text-muted">چراغ رومیزی</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/news-yan-sehpa-4.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/vinca-c-sehpa-3.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 px-1">
+                                            <a href="single-product.html" class="d-block bg-white p-4">
+                                                <div class="d-flex align-items-center justify-content-center h-300 h-lg-85">
+                                                    <img alt="product" src="assets/images/news-orta-sehpa-6.jpg"
+                                                        class="img-fluid w-75 mx-auto d-block h-lg-100">
+                                                </div>
+                                                <h3 class="fw-bold text-dark mb-0 mt-4">واسیلی</h3>
+                                                <p class="mb-0 text-muted">میز ناهارخوری</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-dark fw-bold mt-4">کاوش بیشتر</h3>
+                                    <p class="mb-4 pb-2">
+                                        محصولات جدیدی را کشف کنید که انرژی شما را آشکار می کند و تأثیر زیادی بر جای
+                                        می گذارد.
+                                    </p>
+                                    <a class="rounded-8 py-3 px-5 bg-dark text-white fw-bold mb-5 d-block w-130 text-center">کاوش</a>
+                                </div>
+                                <div class="col-xl-5 d-flex align-items-center justify-content-center order-0 order-xl-1">
+                                    <div class="position-relative">
+                                        <div id="theElement-1">
+                                            <img src="assets/images/NDA=_20211210105133.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="swiper-button-next m-3 h-48 w-90 bg-white rounded-8" tabindex="0"
+                            role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ab02a310d50281648">
+                            <svg width="35" height="18" viewBox="0 0 35 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34.5 9H1.5M1.5 9L9.5 1M1.5 9L9.5 17" stroke="#282828"></path>
+                            </svg>
+                        </div>
+                        <div style="left: 109px!important;"
+                            class="swiper-button-prev m-3 h-48 w-90 bg-white rounded-8" tabindex="0"
+                            role="button" aria-label="Previous slide"
+                            aria-controls="swiper-wrapper-ab02a310d50281648">
+                            <svg width="35" height="18" viewBox="0 0 35 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 9H33.5M33.5 9L25.5 1M33.5 9L25.5 17" stroke="#282828"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="page-loader">
         <div class="spinner-border" role="status">
@@ -792,19 +1007,19 @@
                 <div class="swiper suggestion">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a><img alt="suggestion" src="assets/images/sug1.jpg" class="img-fluid w-100"></a>
+                            <a class="d-block" data-bs-toggle="modal" data-bs-target="#suggestionModal"><img alt="suggestion" src="assets/images/sug1.jpg" class="img-fluid w-100"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a><img alt="suggestion" src="assets/images/sug2.jpg" class="img-fluid w-100"></a>
+                            <a class="d-block" data-bs-toggle="modal" data-bs-target="#suggestionModal"><img alt="suggestion" src="assets/images/sug2.jpg" class="img-fluid w-100"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a><img alt="suggestion" src="assets/images/sug3.jpg" class="img-fluid w-100"></a>
+                            <a class="d-block" data-bs-toggle="modal" data-bs-target="#suggestionModal"><img alt="suggestion" src="assets/images/sug3.jpg" class="img-fluid w-100"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a><img alt="suggestion" src="assets/images/sug4.jpg" class="img-fluid w-100"></a>
+                            <a class="d-block" data-bs-toggle="modal" data-bs-target="#suggestionModal"><img alt="suggestion" src="assets/images/sug4.jpg" class="img-fluid w-100"></a>
                         </div>
                         <div class="swiper-slide">
-                            <a><img alt="suggestion" src="assets/images/sug5.jpg" class="img-fluid w-100"></a>
+                            <a class="d-block" data-bs-toggle="modal" data-bs-target="#suggestionModal"><img alt="suggestion" src="assets/images/sug5.jpg" class="img-fluid w-100"></a>
                         </div>
                     </div>
                 </div>
@@ -1208,8 +1423,9 @@
 
     <!--Scripts -->
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/jquery.min.js"></script>
     <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.hotspot.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/ion.rangeSlider.js"></script>
     <script src="js/magnific-popup.js"></script>

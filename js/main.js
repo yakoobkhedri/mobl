@@ -765,6 +765,10 @@ dropdownItem.forEach((item) => {
         item.parentElement.parentElement.querySelector('.img').src = itemImg;
     })
 })
+
+
+
+// hotspot
 $("#theElement-0").hotspot({
     mode: 'display',
     data: [
@@ -787,7 +791,4 @@ $("#theElement-1").hotspot({
         {"x":33.57578125,"y":45.15056818181818,"img":`<div><img src="assets/images/vinca-c-sehpa-3.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
     ],
     interactivity: "hover"
-});
-Fancybox.bind("[data-fancybox]", {
-    // Your custom options
 });
