@@ -199,6 +199,9 @@ nav select{
 .w-124{
     width: 124px;
 }
+.w-130{
+    width: 130px;
+}
 .w-139{
     width: 139px;
 }
@@ -218,6 +221,10 @@ nav select{
     max-width: 100%!important;
     width: 100%;
 }
+.max-w-385{
+    max-width: 385px!important;
+    width: 100%;
+}
 .max-w-768{
     max-width: 768px!important;
     width: 100%;
@@ -229,6 +236,9 @@ nav select{
 .overflow-y-auto{
     overflow-y: auto;
 }
+.-top-44{
+    top: -44px;
+}
 .top-65{
     top: 65px;
 }
@@ -237,6 +247,9 @@ nav select{
 }
 .-right-32{
     right: -32px;
+}
+.-right-43{
+    right: -43px;
 }
 .-right-58{
     right: -58px;
@@ -7619,11 +7632,22 @@ footer .footer-social li a {
     .catCard{
         height: 394px;
     }
+    .h-xl-auto{
+        height: auto;
+    }
 }
 @media (max-width: 991px) {
     .catCard{
         height: 374px;
     }
+    .h-lg-85{
+        height: 85px;
+    }
+    .h-lg-100{
+        height: 100%;
+    }
+}
+@media (max-width: 768px) {
 }
 @media (max-width: 400px) {
     .catCard{
