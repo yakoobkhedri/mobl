@@ -1,7 +1,7 @@
 ﻿$(function () {
 
     "use strict";
-    $(window).on('scroll load' , function () {
+    $(window).on('scroll load', function () {
         if ($(window).scrollTop() > 120) {
             $('#navbar').css('background-color', 'black');
         } else {
@@ -770,25 +770,36 @@ dropdownItem.forEach((item) => {
 
 // hotspot
 $("#theElement-0").hotspot({
-    mode: 'display',
     data: [
-        {"x":32.975781250000004,"y":30.447309176672384,"img":`<div><img src="assets/images/motto-kose-koltuk-6.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":76.57578125,"y":37.15056818181818,"img":`<div><img src="assets/images/news-yan-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":76.57578125,"y":55.15056818181818,"img":`<div><img src="assets/images/vega-berjer-13.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":70.57578125,"y":64.15056818181818,"img":`<div><img src="assets/images/carya-c-sehpa-5.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":46.57578125,"y":62.15056818181818,"img":`<div><img src="assets/images/black-orta-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+        { "x": 32.975781250000004, "y": 30.447309176672384, "img": `<div><img src="assets/images/motto-kose-koltuk-6.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 76.57578125, "y": 37.15056818181818, "img": `<div><img src="assets/images/news-yan-sehpa-4.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 76.57578125, "y": 55.15056818181818, "img": `<div><img src="assets/images/vega-berjer-13.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 70.57578125, "y": 64.15056818181818, "img": `<div><img src="assets/images/carya-c-sehpa-5.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 46.57578125, "y": 62.15056818181818, "img": `<div><img src="assets/images/black-orta-sehpa-4.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
     ],
     interactivity: "hover"
 });
 $("#theElement-1").hotspot({
-    mode: 'display',
+    
     data: [
-        {"x":42.975781250000004,"y":30.447309176672384,"img":`<div><img src="assets/images/kubik-kanepe-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":76.57578125,"y":30.15056818181818,"img":`<div><img src="assets/images/news-yan-sehpa-4.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":76.57578125,"y":55.15056818181818,"img":`<div><img src="assets/images/lins-berjer-62.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":67.57578125,"y":80.15056818181818,"img":`<div><img src="assets/images/hermes-yan-sehpa-32.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":49.57578125,"y":58.15056818181818,"img":`<div><img src="assets/images/news-orta-sehpa-6.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
-        {"x":33.57578125,"y":45.15056818181818,"img":`<div><img src="assets/images/vinca-c-sehpa-3.jpg"></div>`,"Title":"بوفه","Message":"این متن تستی است."},
+        { "x": 42.975781250000004, "y": 30.447309176672384, "img": `<div><img src="assets/images/kubik-kanepe-4.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 76.57578125, "y": 30.15056818181818, "img": `<div><img src="assets/images/news-yan-sehpa-4.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 76.57578125, "y": 55.15056818181818, "img": `<div><img src="assets/images/lins-berjer-62.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 67.57578125, "y": 80.15056818181818, "img": `<div><img src="assets/images/hermes-yan-sehpa-32.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 49.57578125, "y": 58.15056818181818, "img": `<div><img src="assets/images/news-orta-sehpa-6.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
+        { "x": 33.57578125, "y": 45.15056818181818, "img": `<div><img src="assets/images/vinca-c-sehpa-3.jpg"></div>`, "Title": "بوفه", "Message": "این متن تستی است." },
     ],
     interactivity: "hover"
 });
+
+let suggestItem = Array.from(document.querySelectorAll('.suggestion .swiper-slide > a'));
+
+suggestItem.forEach((item) => {
+    item.addEventListener('click', function () {
+        // var viewport_width = window.innerWidth;
+        // var viewport_height = window.innerHeight;
+        // setTimeout(() => {
+        //     window.resizeTo(viewport_width+=1,viewport_height);
+        // }, 2000);
+    })
+})
