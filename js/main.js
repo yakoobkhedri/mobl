@@ -766,7 +766,9 @@ dropdownItem.forEach((item) => {
     })
 })
 
-
+$('.modal#suggestionModal').on('shown.bs.modal',function(){
+    window.dispatchEvent( new Event('resize') )
+})
 
 // hotspot
 $("#theElement-0").hotspot({
@@ -792,14 +794,3 @@ $("#theElement-1").hotspot({
     interactivity: "hover"
 });
 
-let suggestItem = Array.from(document.querySelectorAll('.suggestion .swiper-slide > a'));
-
-suggestItem.forEach((item) => {
-    item.addEventListener('click', function () {
-        // var viewport_width = window.innerWidth;
-        // var viewport_height = window.innerHeight;
-        // setTimeout(() => {
-        //     window.resizeTo(viewport_width+=1,viewport_height);
-        // }, 2000);
-    })
-})
