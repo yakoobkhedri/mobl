@@ -391,12 +391,33 @@ a:hover{
 #offcanvasMenu {
     z-index: 1036;
 }
+.transition{
+    transition: all .4s;
+}
 .catCard{
     height: 530px;
     background-color: black;
 }
 .catCard img{
     opacity: .6;;
+}
+.hover-success:hover,.hover-success.active{
+    border: 1px solid green!important;
+    transition: all .4s;
+    color: green!important;
+}
+.hover-success:hover svg path,.hover-success.active svg path{
+    transition: all .4s;
+    stroke: green!important;
+}
+.hover-danger:hover,.hover-danger.active{
+    border: 1px solid red!important;
+    transition: all .4s;
+    color: red!important;
+}
+.hover-danger:hover svg path,.hover-danger.active svg path{
+    transition: all .4s;
+    stroke: red!important;
 }
 .catCard:hover > div{
     background-color: black;
