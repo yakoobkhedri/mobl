@@ -763,6 +763,33 @@
         </div>
     </div>
 
+     <!-- comment modal -->
+     <div class="modal fade" id="comment" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+            class="modal-dialog modal-dialog-scrollable bg-white modal-dialog-centered max-w-472 rounded-8">
+            <div class="modal-content h-100">
+                <form class="modal-body">
+                    <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
+                        <h6 class="mb-0 fw-bold">ثبت نظر</h6>
+                        <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="mt-4">
+                        <input placeholder="نام" class="form-control py-2">
+                        <label class="d-flex align-items-center gap-2 cursor mt-3">
+                            <input type="checkbox" class="form-check-input cursor flex-shrink-0">
+                            <p class="mb-0 fs-12">عدم نمایش نام شما در نظرات</p>
+                        </label>
+                        <h6 class="mb-0 my-3">امتیاز محصول</h6>
+                        <input type="range" class="form-control-range w-100 d-block mt-3">
+                        <h6 class="mb-0 my-3">خرید این محصول را...</h6>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="page-loader">
         <div class="spinner-border" role="status">
             <span class="sr-only">در حال بارگزاری...</span>
@@ -1327,6 +1354,249 @@
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <ul class="nav nav-pills mb-0 pe-0 gap-2 mt-5" id="pills-tab" role="tablist">
+                    <li class="nav-item bg-gray" role="presentation">
+                        <button class="nav-link active" id="pills-three-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                            aria-selected="true">مشخصات فنی</button>
+                    </li>
+                    <li class="nav-item bg-gray" role="presentation">
+                        <button class="nav-link" id="pills-four-tab" data-bs-toggle="pill" data-bs-target="#pills-four"
+                            type="button" role="tab" aria-controls="pills-four" aria-selected="false">ویژگی ها</button>
+                    </li>
+                    <li class="nav-item bg-gray" role="presentation">
+                        <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five"
+                            type="button" role="tab" aria-controls="pills-five" aria-selected="false">نظر مشتریان</button>
+                    </li>
+                    <li class="nav-item bg-gray" role="presentation">
+                        <button class="nav-link" id="pills-six-tab" data-bs-toggle="pill" data-bs-target="#pills-six"
+                            type="button" role="tab" aria-controls="pills-six" aria-selected="false">شخصی سازی</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-three" role="tabpanel"
+                        aria-labelledby="pills-three-tab" tabindex="0">
+                        <div class="p-md-4 p-2">
+                          <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hypnotize text-gold" viewBox="0 0 16 16">
+                                <path d="m7.949 7.998.006-.003.003.009zm.025-.028v-.03l.018.01zm0 .015.04-.022.01.006v.04l-.029.016-.021-.012zm.049.057v-.014l-.008.01zm-.05-.008h.006l-.006.004z"/>
+                                <path fill-rule="evenodd" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.965 1.69a6.97 6.97 0 0 1 3.861-.642c.722.767 1.177 1.887 1.177 3.135 0 1.656-.802 3.088-1.965 3.766 1.263.24 2.655-.815 3.406-2.742.38-.975.537-2.023.492-2.996a7.03 7.03 0 0 1 2.488 3.003c-.303 1.01-1.046 1.966-2.128 2.59-1.44.832-3.09.85-4.26.173l.008.021.012-.006-.01.01c.42 1.218 2.032 1.9 4.08 1.586a7.4 7.4 0 0 0 2.856-1.081 6.96 6.96 0 0 1-1.358 3.662c-1.03.248-2.235.084-3.322-.544-1.433-.827-2.272-2.236-2.279-3.58l-.012-.003c-.845.972-.63 2.71.666 4.327a7.4 7.4 0 0 0 2.37 1.935 6.97 6.97 0 0 1-3.86.65c-.727-.767-1.186-1.892-1.186-3.146 0-1.658.804-3.091 1.969-3.768l-.002-.007c-1.266-.25-2.666.805-3.42 2.74a7.4 7.4 0 0 0-.49 3.012 7.03 7.03 0 0 1-2.49-3.018C1.87 9.757 2.613 8.8 3.696 8.174c1.438-.83 3.084-.85 4.253-.176l.005-.006C7.538 6.77 5.924 6.085 3.872 6.4c-1.04.16-2.03.55-2.853 1.08a6.96 6.96 0 0 1 1.372-3.667l-.002.003c1.025-.243 2.224-.078 3.306.547 1.43.826 2.269 2.23 2.28 3.573L8 7.941c.837-.974.62-2.706-.673-4.319a7.4 7.4 0 0 0-2.362-1.931Z"/>
+                            </svg>
+                            <p class="mb-0 fs-14">دارای فنر انعطاف پذیر</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paint-bucket text-gold" viewBox="0 0 16 16">
+                                <path d="M6.192 2.78c-.458-.677-.927-1.248-1.35-1.643a3 3 0 0 0-.71-.515c-.217-.104-.56-.205-.882-.02-.367.213-.427.63-.43.896-.003.304.064.664.173 1.044.196.687.556 1.528 1.035 2.402L.752 8.22c-.277.277-.269.656-.218.918.055.283.187.593.36.903.348.627.92 1.361 1.626 2.068.707.707 1.441 1.278 2.068 1.626.31.173.62.305.903.36.262.05.64.059.918-.218l5.615-5.615c.118.257.092.512.05.939-.03.292-.068.665-.073 1.176v.123h.003a1 1 0 0 0 1.993 0H14v-.057a1 1 0 0 0-.004-.117c-.055-1.25-.7-2.738-1.86-3.494a4 4 0 0 0-.211-.434c-.349-.626-.92-1.36-1.627-2.067S8.857 3.052 8.23 2.704c-.31-.172-.62-.304-.903-.36-.262-.05-.64-.058-.918.219zM4.16 1.867c.381.356.844.922 1.311 1.632l-.704.705c-.382-.727-.66-1.402-.813-1.938a3.3 3.3 0 0 1-.131-.673q.137.09.337.274m.394 3.965c.54.852 1.107 1.567 1.607 2.033a.5.5 0 1 0 .682-.732c-.453-.422-1.017-1.136-1.564-2.027l1.088-1.088q.081.181.183.365c.349.627.92 1.361 1.627 2.068.706.707 1.44 1.278 2.068 1.626q.183.103.365.183l-4.861 4.862-.068-.01c-.137-.027-.342-.104-.608-.252-.524-.292-1.186-.8-1.846-1.46s-1.168-1.32-1.46-1.846c-.147-.265-.225-.47-.251-.607l-.01-.068zm2.87-1.935a2.4 2.4 0 0 1-.241-.561c.135.033.324.11.562.241.524.292 1.186.8 1.846 1.46.45.45.83.901 1.118 1.31a3.5 3.5 0 0 0-1.066.091 11 11 0 0 1-.76-.694c-.66-.66-1.167-1.322-1.458-1.847z"/>
+                            </svg>
+                            <p class="mb-0 fs-14">کیفیت متریال درجه یک</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ubuntu text-gold" viewBox="0 0 16 16">
+                                <path d="M2.273 9.53a2.273 2.273 0 1 0 0-4.546 2.273 2.273 0 0 0 0 4.547Zm9.467-4.984a2.273 2.273 0 1 0 0-4.546 2.273 2.273 0 0 0 0 4.546M7.4 13.108a5.54 5.54 0 0 1-3.775-2.88 3.27 3.27 0 0 1-1.944.24 7.4 7.4 0 0 0 5.328 4.465c.53.113 1.072.169 1.614.166a3.25 3.25 0 0 1-.666-1.9 6 6 0 0 1-.557-.091m3.828 2.285a2.273 2.273 0 1 0 0-4.546 2.273 2.273 0 0 0 0 4.546m3.163-3.108a7.44 7.44 0 0 0 .373-8.726 3.3 3.3 0 0 1-1.278 1.498 5.57 5.57 0 0 1-.183 5.535 3.26 3.26 0 0 1 1.088 1.693M2.098 3.998a3.3 3.3 0 0 1 1.897.486 5.54 5.54 0 0 1 4.464-2.388c.037-.67.277-1.313.69-1.843a7.47 7.47 0 0 0-7.051 3.745"/>
+                            </svg>
+                            <p class="mb-0 fs-14">ضد خش و ترک خوردگی</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers-half text-gold" viewBox="0 0 16 16">
+                                <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+                            </svg>
+                            <p class="mb-0 fs-14">دارای بالش طبی</p>
+                          </div>
+                          <div class="d-flex align-items-center gap-2 py-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-yelp text-gold" viewBox="0 0 16 16">
+                                <path d="m4.188 10.095.736-.17.073-.02A.813.813 0 0 0 5.45 8.65a1 1 0 0 0-.3-.258 3 3 0 0 0-.428-.198l-.808-.295a76 76 0 0 0-1.364-.493C2.253 7.3 2 7.208 1.783 7.14c-.041-.013-.087-.025-.124-.038a2.1 2.1 0 0 0-.606-.116.72.72 0 0 0-.572.245 2 2 0 0 0-.105.132 1.6 1.6 0 0 0-.155.309c-.15.443-.225.908-.22 1.376.002.423.013.966.246 1.334a.8.8 0 0 0 .22.24c.166.114.333.129.507.141.26.019.513-.045.764-.103l2.447-.566zm8.219-3.911a4.2 4.2 0 0 0-.8-1.14 1.6 1.6 0 0 0-.275-.21 2 2 0 0 0-.15-.073.72.72 0 0 0-.621.031c-.142.07-.294.182-.496.37-.028.028-.063.06-.094.089-.167.156-.353.35-.574.575q-.51.516-1.01 1.042l-.598.62a3 3 0 0 0-.298.365 1 1 0 0 0-.157.364.8.8 0 0 0 .007.301q0 .007.003.013a.81.81 0 0 0 .945.616l.074-.014 3.185-.736c.251-.058.506-.112.732-.242.151-.088.295-.175.394-.35a.8.8 0 0 0 .093-.313c.05-.434-.178-.927-.36-1.308M6.706 7.523c.23-.29.23-.722.25-1.075.07-1.181.143-2.362.201-3.543.022-.448.07-.89.044-1.34-.022-.372-.025-.799-.26-1.104C6.528-.077 5.644-.033 5.04.05q-.278.038-.553.104a8 8 0 0 0-.543.149c-.58.19-1.393.537-1.53 1.204-.078.377.106.763.249 1.107.173.417.41.792.625 1.185.57 1.036 1.15 2.066 1.728 3.097.172.308.36.697.695.857q.033.015.068.025c.15.057.313.068.469.032l.028-.007a.8.8 0 0 0 .377-.226zm-.276 3.161a.74.74 0 0 0-.923-.234 1 1 0 0 0-.145.09 2 2 0 0 0-.346.354c-.026.033-.05.077-.08.104l-.512.705q-.435.591-.861 1.193c-.185.26-.346.479-.472.673l-.072.11c-.152.235-.238.406-.282.559a.7.7 0 0 0-.03.314c.013.11.05.217.108.312q.046.07.1.138a1.6 1.6 0 0 0 .257.237 4.5 4.5 0 0 0 2.196.76 1.6 1.6 0 0 0 .349-.027 2 2 0 0 0 .163-.048.8.8 0 0 0 .278-.178.7.7 0 0 0 .17-.266c.059-.147.098-.335.123-.613l.012-.13c.02-.231.03-.502.045-.821q.037-.735.06-1.469l.033-.87a2.1 2.1 0 0 0-.055-.623 1 1 0 0 0-.117-.27Zm5.783 1.362a2.2 2.2 0 0 0-.498-.378l-.112-.067c-.199-.12-.438-.246-.719-.398q-.644-.353-1.295-.695l-.767-.407c-.04-.012-.08-.04-.118-.059a2 2 0 0 0-.466-.166 1 1 0 0 0-.17-.018.74.74 0 0 0-.725.616 1 1 0 0 0 .01.293c.038.204.13.406.224.583l.41.768q.341.65.696 1.294c.152.28.28.52.398.719q.036.057.068.112c.145.239.261.39.379.497a.73.73 0 0 0 .596.201 2 2 0 0 0 .168-.029 1.6 1.6 0 0 0 .325-.129 4 4 0 0 0 .855-.64c.306-.3.577-.63.788-1.006q.045-.08.076-.165a2 2 0 0 0 .051-.161q.019-.083.029-.168a.8.8 0 0 0-.038-.327.7.7 0 0 0-.165-.27"/>
+                            </svg>
+                            <p class="mb-0 fs-14">استفاده از چرم اصل تبریز</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pills-four" role="tabpanel"
+                    aria-labelledby="pills-four-tab" tabindex="0">
+                    <div class="p-md-4 p-2">
+                      <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill text-gold" viewBox="0 0 16 16">
+                            <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z"/>
+                        </svg>
+                        <p class="mb-0 fs-14">تخت تاشو</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-unity text-gold" viewBox="0 0 16 16">
+                            <path d="M15 11.2V3.733L8.61 0v2.867l2.503 1.466c.099.067.099.2 0 .234L8.148 6.3c-.099.067-.197.033-.263 0L4.92 4.567c-.099-.034-.099-.2 0-.234l2.504-1.466V0L1 3.733V11.2v-.033.033l2.438-1.433V6.833c0-.1.131-.166.197-.133L6.6 8.433c.099.067.132.134.132.234v3.466c0 .1-.132.167-.198.134L4.031 10.8l-2.438 1.433L7.983 16l6.391-3.733-2.438-1.434L9.434 12.3c-.099.067-.198 0-.198-.133V8.7c0-.1.066-.2.132-.233l2.965-1.734c.099-.066.197 0 .197.134V9.8z"/>
+                        </svg>
+                        <p class="mb-0 fs-14">جابجایی آسان</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-palette2 text-gold" viewBox="0 0 16 16">
+                            <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a3 3 0 0 1-2.121-.879A3 3 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0M15 15v-4H9.258l-4.015 4zM0 .5v12.495zm0 12.495V13z"/>
+                        </svg>
+                        <p class="mb-0 fs-14">چند منظوره</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 border-bottom py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-wtf text-gold" viewBox="0 0 16 16">
+                            <path d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                        </svg>
+                        <p class="mb-0 fs-14">سایز تخت: 3*4</p>
+                      </div>
+                      <div class="d-flex align-items-center gap-2 py-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-wtf text-gold" viewBox="0 0 16 16">
+                            <path d="M5 1v8H1V1zM1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm13 2v5H9V2zM9 1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 13v2H3v-2zm-2-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zm12-1v2H9v-2zm-6-1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>
+                        </svg>
+                        <p class="mb-0 fs-14">وزن: 110 کیلوگرم</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade show" id="pills-five" role="tabpanel"
+                         aria-labelledby="pills-five-tab" tabindex="0">
+                         <div class="p-md-4 p-2">
+                           <div class="row g-4">
+                            <div class="col-lg-4">
+                                <div class="border rounded-3 p-md-3 p-2">
+                                 <div class="bg-gray p-3 d-flex align-items-center gap-2 rounded-3">
+                                   <div class="d-flex align-items-end gap-1">
+                                    <p class="text-dark">5/</p>
+                                    <p class="fw-bold display-3 text-dark mb-0">4.5</p>
+                                   </div>
+                                   <div class="flex-grow-1">
+                                    <p class="mb-0 fs-12 mb-2">(از 864 امتیاز)</p>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15414 14.8887C5.81609 15.0651 5.40713 15.0341 5.09962 14.8086C4.7921 14.5831 4.63953 14.2024 4.7062 13.8269L5.24576 10.7343L2.97415 8.55738C2.69648 8.29259 2.59472 7.89231 2.71221 7.52706C2.8297 7.1618 3.14574 6.89592 3.52571 6.84267L6.67969 6.39181L8.10362 3.55129C8.27245 3.21063 8.61979 2.99512 8.99999 2.99512C9.38019 2.99512 9.72753 3.21063 9.89636 3.55129L11.3203 6.39181L14.4743 6.84267C14.8542 6.89592 15.1703 7.1618 15.2878 7.52706C15.4053 7.89231 15.3035 8.29259 15.0258 8.55738L12.7542 10.7343L13.2938 13.8276C13.3605 14.203 13.2079 14.5837 12.9004 14.8092C12.5929 15.0347 12.1839 15.0658 11.8458 14.8894L8.99999 13.4187L6.15414 14.8887Z" fill="#9E9E9E" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15414 14.8887C5.81609 15.0651 5.40713 15.0341 5.09962 14.8086C4.7921 14.5831 4.63953 14.2024 4.7062 13.8269L5.24576 10.7343L2.97415 8.55738C2.69648 8.29259 2.59472 7.89231 2.71221 7.52706C2.8297 7.1618 3.14574 6.89592 3.52571 6.84267L6.67969 6.39181L8.10362 3.55129C8.27245 3.21063 8.61979 2.99512 8.99999 2.99512C9.38019 2.99512 9.72753 3.21063 9.89636 3.55129L11.3203 6.39181L14.4743 6.84267C14.8542 6.89592 15.1703 7.1618 15.2878 7.52706C15.4053 7.89231 15.3035 8.29259 15.0258 8.55738L12.7542 10.7343L13.2938 13.8276C13.3605 14.203 13.2079 14.5837 12.9004 14.8092C12.5929 15.0347 12.1839 15.0658 11.8458 14.8894L8.99999 13.4187L6.15414 14.8887Z" fill="#FFC909" stroke="#FFC909" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15414 14.8887C5.81609 15.0651 5.40713 15.0341 5.09962 14.8086C4.7921 14.5831 4.63953 14.2024 4.7062 13.8269L5.24576 10.7343L2.97415 8.55738C2.69648 8.29259 2.59472 7.89231 2.71221 7.52706C2.8297 7.1618 3.14574 6.89592 3.52571 6.84267L6.67969 6.39181L8.10362 3.55129C8.27245 3.21063 8.61979 2.99512 8.99999 2.99512C9.38019 2.99512 9.72753 3.21063 9.89636 3.55129L11.3203 6.39181L14.4743 6.84267C14.8542 6.89592 15.1703 7.1618 15.2878 7.52706C15.4053 7.89231 15.3035 8.29259 15.0258 8.55738L12.7542 10.7343L13.2938 13.8276C13.3605 14.203 13.2079 14.5837 12.9004 14.8092C12.5929 15.0347 12.1839 15.0658 11.8458 14.8894L8.99999 13.4187L6.15414 14.8887Z" fill="#FFC909" stroke="#FFC909" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15414 14.8887C5.81609 15.0651 5.40713 15.0341 5.09962 14.8086C4.7921 14.5831 4.63953 14.2024 4.7062 13.8269L5.24576 10.7343L2.97415 8.55738C2.69648 8.29259 2.59472 7.89231 2.71221 7.52706C2.8297 7.1618 3.14574 6.89592 3.52571 6.84267L6.67969 6.39181L8.10362 3.55129C8.27245 3.21063 8.61979 2.99512 8.99999 2.99512C9.38019 2.99512 9.72753 3.21063 9.89636 3.55129L11.3203 6.39181L14.4743 6.84267C14.8542 6.89592 15.1703 7.1618 15.2878 7.52706C15.4053 7.89231 15.3035 8.29259 15.0258 8.55738L12.7542 10.7343L13.2938 13.8276C13.3605 14.203 13.2079 14.5837 12.9004 14.8092C12.5929 15.0347 12.1839 15.0658 11.8458 14.8894L8.99999 13.4187L6.15414 14.8887Z" fill="#FFC909" stroke="#FFC909" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.15414 14.8887C5.81609 15.0651 5.40713 15.0341 5.09962 14.8086C4.7921 14.5831 4.63953 14.2024 4.7062 13.8269L5.24576 10.7343L2.97415 8.55738C2.69648 8.29259 2.59472 7.89231 2.71221 7.52706C2.8297 7.1618 3.14574 6.89592 3.52571 6.84267L6.67969 6.39181L8.10362 3.55129C8.27245 3.21063 8.61979 2.99512 8.99999 2.99512C9.38019 2.99512 9.72753 3.21063 9.89636 3.55129L11.3203 6.39181L14.4743 6.84267C14.8542 6.89592 15.1703 7.1618 15.2878 7.52706C15.4053 7.89231 15.3035 8.29259 15.0258 8.55738L12.7542 10.7343L13.2938 13.8276C13.3605 14.203 13.2079 14.5837 12.9004 14.8092C12.5929 15.0347 12.1839 15.0658 11.8458 14.8894L8.99999 13.4187L6.15414 14.8887Z" fill="#FFC909" stroke="#FFC909" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </div>
+                                   </div>
+                                 </div>
+                                 <div class="d-flex align-items-center justify-content-center gap-1 mt-3">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.29169 10.4167C7.70315 9.91146 8.26565 9.625 8.85419 9.625C9.44273 9.625 9.9896 9.91146 10.4167 10.4167" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M14.5834 10.4167C14.9948 9.91146 15.5573 9.625 16.1459 9.625C16.7344 9.625 17.2813 9.91146 17.7084 10.4167" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M19.1292 5.87088C22.7903 9.53204 22.7903 15.468 19.1292 19.1291C15.468 22.7903 9.53208 22.7903 5.87094 19.1291C2.20977 15.4679 2.20977 9.53202 5.87094 5.87088C9.5321 2.20971 15.468 2.20971 19.1292 5.87088" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M16.1459 15.2998C16.1459 15.2998 14.7781 16.6665 12.5 16.6665C10.2209 16.6665 8.85419 15.2998 8.85419 15.2998" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <p class="fw-bold mb-0 fs-10 text-muted">80% کاربران پیشنهاد خرید کرده اند.</p>
+                                 </div>
+                                 <a data-bs-toggle="modal" data-bs-target="#comment" class="btn btn-dark w-100 mt-3">
+                                    ثبت نظر
+                                 </a>
+                                 <p class="fw-bold mb-0 fs-12 text-center mt-3 text-muted">با ارسال دیدگاه، به انتخاب
+                                    خریداران دیگر کمک کنید</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>
+                                    <div class="border-bottom pb-5">
+                                        <div class="d-flex align-items-center gap-3 flex-wrap justify-content-between">
+                                         <div class="d-flex align-items-center gap-2">
+                                           <div class="text-white fw-bold bg-success rounded-3 px-3 py-2">4.8</div>
+                                           <p class="mb-0 fs-12">کامران (15 بهمن 1401)</p>
+                                         </div>
+                                         <div class="d-flex align-items-center gap-1">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.29166 10.4167C7.70311 9.91146 8.26562 9.625 8.85416 9.625C9.4427 9.625 9.98957 9.91146 10.4167 10.4167" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M14.5833 10.4167C14.9948 9.91146 15.5573 9.625 16.1458 9.625C16.7344 9.625 17.2813 9.91146 17.7083 10.4167" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M19.1292 5.87088C22.7903 9.53204 22.7903 15.468 19.1292 19.1291C15.468 22.7903 9.53208 22.7903 5.87094 19.1291C2.20977 15.4679 2.20977 9.53202 5.87094 5.87088C9.5321 2.20971 15.468 2.20971 19.1292 5.87088" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M16.1458 15.2998C16.1458 15.2998 14.7781 16.6665 12.5 16.6665C10.2208 16.6665 8.85416 15.2998 8.85416 15.2998" stroke="#31B04D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p class="mb-0 text-success">پیشنهاد میکنم</p>
+                                         </div>
+                                        </div>
+                                        <p class="text-justify mt-3">
+                                            این تخت که اصلا حرف نداره و عالیه، این از این.
+                                            می‌خوام به تشکر ویژه از اسنپ شاپ عزیز بکنم که کالا رو درست و سالم و به موقع
+                                            آوردن. بدون هیچ مشکلی ریجستری شد.
+                                        </p>
+                                        <div class="d-flex align-items-center gap-3 flex-wrap justify-content-between">
+                                           <div class="d-flex align-items-center gap-2">
+                                            <div class="w-16 h-16 rounded-circle bg-brown"></div>
+                                            <p class="mb-0 fs-14">قهوه ای</p>
+                                           </div>
+                                           <div class="d-flex align-items-center gap-3">
+                                             <p class="mb-0 fs-12 text-muted">آیا این دیدگاه مفید بود؟</p>
+                                             <div class="d-flex align-items-center gap-1 cursor">
+                                               <p class="mb-0 fs-12">2</p>
+                                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 9.66748V11.6492C7 12.6465 7.63384 13.5336 8.57734 13.8567L8.83734 13.9458C9.08931 14.0321 9.3653 14.0143 9.60412 13.8963C9.84293 13.7784 10.0248 13.5701 10.1095 13.3175L11.3333 9.66667H13.7083C14.2376 9.66667 14.6667 9.23761 14.6667 8.70833V2.95833C14.6667 2.42906 14.2376 2 13.7083 2H4.87595C3.99645 2 3.22982 2.59857 3.01651 3.45181L2.05818 7.28514C1.91503 7.85773 2.04367 8.46433 2.40689 8.92954C2.77011 9.39475 3.32741 9.66667 3.91762 9.66667H7" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M11.3333 2V9.66667" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                               </svg>
+                                             </div>
+                                             <div class="d-flex align-items-center gap-1 cursor">
+                                                <p class="mb-0 fs-12">68</p>
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.4762 4.47629H10.3325C10.8457 4.47629 11.3303 4.71275 11.6462 5.11727C11.962 5.5218 12.0739 6.04928 11.9494 6.54718L11.0775 10.0349C10.8867 10.7981 10.201 11.3334 9.41438 11.3334H1.52381C1.05043 11.3334 0.666672 10.9497 0.666672 10.4763V5.33343C0.666672 4.86005 1.05043 4.47629 1.52381 4.47629H3.66667V4.47452L4.77885 1.18486C4.84374 0.992943 4.98239 0.834773 5.16415 0.745309C5.34592 0.655845 5.55583 0.642455 5.74748 0.708098L6.18858 0.859164C6.95878 1.12294 7.47619 1.84705 7.4762 2.66116V4.47452" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M3.66668 11.3322V4.47656" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                              </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="border-bottom py-5">
+                                        <div class="d-flex align-items-center gap-3 flex-wrap justify-content-between">
+                                         <div class="d-flex align-items-center gap-2">
+                                           <div class="text-white fw-bold bg-warning rounded-3 px-3 py-2">3.1</div>
+                                           <p class="mb-0 fs-12">کامران (15 بهمن 1401)</p>
+                                         </div>
+                                         <div class="d-flex align-items-center gap-1">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.5 16.0005C8.5 16.0005 9.813 14.6885 12 14.6885C14.188 14.6885 15.5 16.0005 15.5 16.0005" stroke="#EC4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M18.364 5.63604C21.8787 9.15076 21.8787 14.8492 18.364 18.3639C14.8493 21.8787 9.1508 21.8787 5.6361 18.3639C2.12138 14.8492 2.12138 9.15074 5.6361 5.63604C9.15082 2.12132 14.8493 2.12132 18.364 5.63604" stroke="#EC4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M7 10.0001C7.395 9.51512 7.935 9.24012 8.5 9.24012C9.065 9.24012 9.59 9.51512 10 10.0001" stroke="#EC4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M14 10.0001C14.395 9.51512 14.935 9.24012 15.5 9.24012C16.065 9.24012 16.59 9.51512 17 10.0001" stroke="#EC4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                            <p class="mb-0 text-danger">پیشنهاد نمیکنم</p>
+                                         </div>
+                                        </div>
+                                        <p class="text-justify mt-3">
+                                            این تخت که اصلا کیفیت نداره این از این.
+                                            می‌خوام به تشکر ویژه از اسنپ شاپ عزیز بکنم که کالا رو درست و سالم و به موقع
+                                            آوردن. بدون هیچ مشکلی ریجستری شد.
+                                        </p>
+                                        <div class="d-flex align-items-center gap-3 flex-wrap justify-content-between">
+                                           <div class="d-flex align-items-center gap-2">
+                                            <div class="w-16 h-16 rounded-circle bg-brown"></div>
+                                            <p class="mb-0 fs-14">قهوه ای</p>
+                                           </div>
+                                           <div class="d-flex align-items-center gap-3">
+                                             <p class="mb-0 fs-12 text-muted">آیا این دیدگاه مفید بود؟</p>
+                                             <div class="d-flex align-items-center gap-1 cursor">
+                                               <p class="mb-0 fs-12">2</p>
+                                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 9.66748V11.6492C7 12.6465 7.63384 13.5336 8.57734 13.8567L8.83734 13.9458C9.08931 14.0321 9.3653 14.0143 9.60412 13.8963C9.84293 13.7784 10.0248 13.5701 10.1095 13.3175L11.3333 9.66667H13.7083C14.2376 9.66667 14.6667 9.23761 14.6667 8.70833V2.95833C14.6667 2.42906 14.2376 2 13.7083 2H4.87595C3.99645 2 3.22982 2.59857 3.01651 3.45181L2.05818 7.28514C1.91503 7.85773 2.04367 8.46433 2.40689 8.92954C2.77011 9.39475 3.32741 9.66667 3.91762 9.66667H7" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M11.3333 2V9.66667" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                               </svg>
+                                             </div>
+                                             <div class="d-flex align-items-center gap-1 cursor">
+                                                <p class="mb-0 fs-12">68</p>
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.4762 4.47629H10.3325C10.8457 4.47629 11.3303 4.71275 11.6462 5.11727C11.962 5.5218 12.0739 6.04928 11.9494 6.54718L11.0775 10.0349C10.8867 10.7981 10.201 11.3334 9.41438 11.3334H1.52381C1.05043 11.3334 0.666672 10.9497 0.666672 10.4763V5.33343C0.666672 4.86005 1.05043 4.47629 1.52381 4.47629H3.66667V4.47452L4.77885 1.18486C4.84374 0.992943 4.98239 0.834773 5.16415 0.745309C5.34592 0.655845 5.55583 0.642455 5.74748 0.708098L6.18858 0.859164C6.95878 1.12294 7.47619 1.84705 7.4762 2.66116V4.47452" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M3.66668 11.3322V4.47656" stroke="#9E9E9E" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <!-- reply -->
+                                        <div class="bg-gray rounded-3 p-3 mt-4">
+                                          <img alt="logo" src="assets/images/logo.png" class="img-fluid d-block w-72">
+                                          <p class="text-secondary mt-2 mb-0 fw-bold fs-14">متاسفیم که تجربه ناخوشایندی از خرید
+                                            داشته اید، در صورت لوزم میتوانید کالای دریافتی را مرجوع کنید.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                         </div>
                     </div>
                 </div>
             </div>

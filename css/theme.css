@@ -97,8 +97,14 @@ nav select{
 .gray-hover:hover{
     background-color: rgb(224, 224, 224);
 }
+.text-justify{
+    text-align: justify;
+}
 .cursor{
     cursor: pointer;
+}
+.h-16{
+    height: 16px;
 }
 .h-26{
     height: 26px;
@@ -172,6 +178,9 @@ nav select{
 .h-900{
     height: 900px;
 }
+.w-16{
+    width: 16px;
+}
 .w-26{
     width: 26px;
 }
@@ -223,6 +232,10 @@ nav select{
 }
 .max-w-385{
     max-width: 385px!important;
+    width: 100%;
+}
+.max-w-472{
+    max-width: 472px!important;
     width: 100%;
 }
 .max-w-768{
@@ -295,6 +308,9 @@ a:hover{
 }
 .bg-sky{
     background-color: #eaf3fc;
+}
+.bg-brown{
+    background-color: brown;
 }
 .text-gold{
     color: #916250;
