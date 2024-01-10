@@ -746,7 +746,7 @@ let products = {
   },
   mechanism: { isSelected: false, price: 10000 },
   nightstand: { isSelected: false, price: 10000 },
-  trawers: {
+  color: {
     index: 0,
     price: [10000, 20000, 30000, 40000, 50000],
   },
@@ -772,7 +772,7 @@ const dropdownItem = Array.from(
 );
 const productPcs = document.querySelector(".productPcs");
 let pricesArr = [];
-const collectPrcies = () => {
+const collectPrcies = (pcsHndeler = false) => {
   const priceInput = document.getElementById("price");
   let result = 0;
   for (const key in products) {

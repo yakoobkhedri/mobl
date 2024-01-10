@@ -401,6 +401,15 @@ a:hover{
 .catCard img{
     opacity: .6;;
 }
+/* input number */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
 .hover-success:hover,.hover-success.active{
     border: 1px solid green!important;
     transition: all .4s;
