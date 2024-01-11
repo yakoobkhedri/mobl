@@ -103,6 +103,9 @@ nav select{
 .cursor{
     cursor: pointer;
 }
+.h-5{
+    height: 5px;
+}
 .h-16{
     height: 16px;
 }
@@ -180,6 +183,12 @@ nav select{
 }
 .h-900{
     height: 900px;
+}
+.w-5{
+    width: 5px;
+}
+.w-10{
+    width: 10px;
 }
 .w-16{
     width: 16px;
