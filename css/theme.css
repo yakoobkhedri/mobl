@@ -535,6 +535,23 @@ input[type=number] {
    padding-top: 1.5rem;
    padding-bottom: 1.5rem;
   }
+  #payOption img{
+    transition: all .4s;
+    filter: grayscale(80%);
+  }
+  #payOption > div:hover img,#payOption > div.active img{
+    filter: grayscale(1%);
+  }
+  #addressContent{
+    transition: all .4s;
+    overflow: hidden;
+    max-height: 0;
+  }
+  #addressContent.active{
+    padding-top: 26px;
+    padding-bottom: 26px;
+    max-height: 2000px;
+  }
 .cd-image-container {
     position: relative;
     margin: 0em auto;

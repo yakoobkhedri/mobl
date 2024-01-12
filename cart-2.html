@@ -583,7 +583,7 @@
                 <div class="bg-dark w-5 h-5 flex-shrink-0"></div>
                 <h5 class="m-0 text-dark">آدرس تحویل سفارش</h5>
               </div>
-              <div class="d-flex align-items-center gap-4 my-4">
+              <div class="d-flex flex-wrap align-items-center gap-4 my-4">
                 <div>
                   <p class="fs-14 text-secondary fw-bold">گیرنده : یعقوب خدری</p>
                   <p class="fs-14 text-secondary fw-bold">شماره تماس : 09149492490</p>
@@ -593,7 +593,7 @@
                 <div class="flex-grow-1">
                   <a class="bg-gray py-2 text-center fw-bold me-auto d-block w-220 fs-14 mb-3 text-secondary">تغییر
                     اطلاعات دریافت کننده</a>
-                  <div class="bg-gray py-2 cursor text-center fw-bold me-auto d-block w-220 fs-14 text-secondary">به
+                  <div id="addAddress" class="bg-gray py-2 cursor text-center fw-bold me-auto d-block w-220 fs-14 text-secondary">به
                     آدرس دیگر ارسال شود؟</div>
                 </div>
               </div>
@@ -616,12 +616,12 @@
                 </div>
               </label>
             </div>
-            <div class="bg-white shadow rounded-8 p-4 mt-3">
+            <div id="addressContent" class="bg-white shadow rounded-8 px-4 mt-3">
               <div class="d-flex align-items-center gap-3 mb-4">
                 <div class="bg-dark w-5 h-5 flex-shrink-0"></div>
                 <h5 class="m-0 text-dark">آدرس جدید تحویل سفارش</h5>
               </div>
-              <form class="row g-4">
+              <form class="row g-4 mx-0">
                 <div class="col-lg-6">
                   <label class="form-label text-dark">نام<span class="text-danger">*</span></label>
                   <input class="form-control">
@@ -671,6 +671,34 @@
                 <label class="d-flex align-items-center gap-2 cursor">
                   <input type="radio" name="time" class="cursor form-check-input">
                   <p class="mb-0 fs-14 text-dark">سریع ترین زمان ممکن</p>
+                </label>
+              </div>
+              <div class="border-bottom pb-5 mb-4">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="bg-dark w-5 h-5 flex-shrink-0"></div>
+                  <h5 class="m-0 text-dark">نوع پرداخت:</h5>
+                </div>
+                <div class="d-flex align-items-center gap-5 flex-wrap text-center" id="payOption">
+                  <div class="position-relative">
+                    <input type="radio" name="pay" class="cursor form-check-input opacity-none position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+                    <img alt="pay" src="assets/images/Untitled.png" class="d-block mx-auto w-90 cursor">
+                    <p class="mt-3 text-dark fw-bold">درگاه بانک</p>
+                  </div>
+                  <div class="position-relative">
+                    <input type="radio" name="pay" class="cursor form-check-input opacity-none position-absolute top-0 bottom-0 end-0 start-0 w-100 h-100">
+                    <img alt="pay" src="assets/images/wallet-3260434-2725127.png" class="d-block mx-auto w-124 cursor">
+                    <p class="mt-4 pt-2 text-dark fw-bold">کیف پول (0 تومان)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="border-bottom pb-5 mb-5">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                  <div class="bg-dark w-5 h-5 flex-shrink-0"></div>
+                  <h5 class="m-0 text-dark">روش ارسال:</h5>
+                </div>
+                <label class="d-flex align-items-center gap-2 cursor">
+                  <input type="radio" name="post" class="cursor form-check-input">
+                  <p class="mb-0 fs-14 text-dark">هزینه بسته بندی و پست : 30,000 تومان</p>
                 </label>
               </div>
               <a href="cart-2.html"
@@ -987,6 +1015,18 @@
   </div> <!--/wrapper-->
 
   <!--Scripts -->
+  <script>
+   document.getElementById('addAddress').addEventListener('click',function () {
+  document.getElementById('addressContent').classList.toggle('active');
+})
+let payItems=Array.from(document.querySelectorAll('#payOption > div'));
+payItems.forEach((item)=>{
+  item.addEventListener('click',function () {
+    payItems.forEach((allitem)=>{allitem.classList.remove('active')});
+    item.classList.add('active');
+  })
+})
+  </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-2.1.1.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

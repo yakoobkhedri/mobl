@@ -649,7 +649,6 @@ $(window).on("load", function () {
     //}
   }
 });
-
 // swiper
 var Consultants = new Swiper(".Consultants", {
   loop: true,
